@@ -136,16 +136,14 @@
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
-                        
                     </div>
                     <div class="text-right">
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div><!-- /.row -->
-</div><!-- /#page-wrapper -->s
+</div><!-- /#page-wrapper -->
 <script type="text/javascript">
     
     $.post('info/smstotales', function(data) {
