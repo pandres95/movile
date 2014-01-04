@@ -17,7 +17,7 @@
                             <i class="fa fa-comments fa-5x"></i>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <p id="sent_sms_number" class="announcement-heading"></p>
+                            <p class="announcement-heading"><?php echo $data['sms']['enviados'] ?></p>
                             <p class="announcement-text">SMS enviados</p>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                             <i class="fa fa-check fa-5x"></i>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <p id="correct_sms_number" class="announcement-heading"></p>
+                            <p class="announcement-heading"><?php echo $data['sms']['correctos'] ?></p>
                             <p class="announcement-text">SMS aceptado</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                             <i class="fa fa-tasks fa-5x"></i>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <p id="error_sms_number" class="announcement-heading"></p>
+                            <p class="announcement-heading"><?php echo $data['sms']['fallidos'] ?></p>
                             <p class="announcement-text">Errores</p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                             <i class="fa fa-book fa-5x"></i>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <p id="surveys_number" class="announcement-heading"></p>
+                            <p class="announcement-heading"><?php echo $data['encuestas'] ?></p>
                             <p class="announcement-text">Encuestas</p>
                         </div>
                     </div>
@@ -224,23 +224,5 @@
     
     
     
-    
-</script>
-
-
-<script type="text/javascript">
-    
-    $.post('info/smstotales', function(data) {
-        $('#sent_sms_number').text(data);
-    });
-    $.post('info/smscorrectos', function(data) {
-        $('#correct_sms_number').text(data);
-    });
-    $.post('info/smsfallidos', function(data) {
-        $('#error_sms_number').text(data);
-    });
-    $.post('info/numeroencuestas', function(data){
-        $('#surveys_number').text(data);
-    });
     
 </script>

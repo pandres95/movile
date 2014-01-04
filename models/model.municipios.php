@@ -41,8 +41,8 @@ class municipiosModel extends Model{
                         "codigo" => $row['codigo'],
                         "municipio" => $row['nombre'],
                         "departamento" => $row['nombre_departamento'],
-                        "longitud" => $row['longitud'],
-                        "latitud" => $row['latitud']
+                        "longitud" => (int)$row['longitud'],
+                        "latitud" => (int)$row['latitud']
                     );
                 }
                 $res = array("municipios"=>$res);

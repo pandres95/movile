@@ -54,7 +54,7 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav side-nav">
                         <?php
-foreach ($data as $key => $value) {
+foreach ($data['menu'] as $key => $value) {
     echo '<li><a href="/movile/'.$value['url'].'"><i class="fa fa-pencil-square-o"></i>  '.$value['nombre'].'</a></li>';
 }
                         ?>
@@ -86,7 +86,7 @@ foreach ($data as $key => $value) {
                         </li>
                         <li class="dropdown user-dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
-                                <?php echo $_SESSION['u_session']['nombre']; ?><b class="caret"></b></a>
+                                <?php echo $data['nombre']; ?><b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#"><i class="fa fa-user"></i> Perfil</a></li>
                                 <li><a href="#"><i class="fa fa-gear"></i> Opciones</a></li>

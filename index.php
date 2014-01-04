@@ -1,12 +1,9 @@
 <?php 
 
-
 /* 
-
 
 ccToolkit
 Grupo de herramientas y entorno para soluciones de CaribeCoders
-
 
 */
 
@@ -25,7 +22,6 @@ $libraries = array(
 	'phpmailer'	=>'PHPMailer'
 	);
 autoLoad($libraries);
-
 
 
 // Config Zone
