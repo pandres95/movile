@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AnswerQuestion method" Url="html/ff9c3f55-b0de-0bb3-0ec0-5dfbee96e1a8.htm" />
+  <HelpKINode Title="AskNextQuestion method" Url="html/52f90c37-5fa9-dcd3-e9a8-ebc2ac8af0a9.htm" />
+  <HelpKINode Title="Celular property" Url="html/1e433c04-9632-e928-bcf0-46021c1f2ad4.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="ProjectInstaller.Dispose Method " Url="html/2d1a5e1c-a201-a850-ccc8-856c62f42faf.htm" />
+    <HelpKINode Title="SMSReceiverService.Dispose Method " Url="html/e3e5e023-3304-3642-6dec-8f58f7a67481.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Fecha property" Url="html/89898c89-c623-005c-101e-16d69c336639.htm" />
+  <HelpKINode Title="HasActiveQuestion method" Url="html/e00f14e8-7af0-d429-27a8-07bf2932f97a.htm" />
+  <HelpKINode Title="HasNextQuestion method" Url="html/5b2449f3-c089-58d9-d649-fea64c9ca2a4.htm" />
+  <HelpKINode Title="Id property" Url="html/2b6a5aab-4041-0523-ec86-bb3b51e5800c.htm" />
+  <HelpKINode Title="InitializeLog method" Url="html/0380700c-8b31-9f06-27f2-76aee5e6b2d0.htm" />
+  <HelpKINode Title="InitializeTimer method" Url="html/03e699d8-717b-0d84-2cb0-71409d74c71b.htm" />
+  <HelpKINode Title="InvalidatePreviousQuestion method" Url="html/9b561e9a-63aa-0877-749f-b1eec598f30a.htm" />
+  <HelpKINode Title="IServiceSendMessage interface">
+    <HelpKINode Title="IServiceSendMessage Interface" Url="html/310bcb17-9d60-027b-b10d-d892c778d5a1.htm" />
+    <HelpKINode Title="IServiceSendMessage Members" Url="html/ca7d6fba-bdb0-fcbd-02bd-60e0c4b14a83.htm" />
+    <HelpKINode Title="about IServiceSendMessage interface" Url="html/310bcb17-9d60-027b-b10d-d892c778d5a1.htm" />
+    <HelpKINode Title="all members" Url="html/ca7d6fba-bdb0-fcbd-02bd-60e0c4b14a83.htm" />
+    <HelpKINode Title="methods" Url="html/75f7e801-c42d-3632-03f2-99478aac9efb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IServiceSendMessage.SendMessage method" Url="html/6482914d-b54f-0ea7-0522-dc2277edb4dc.htm" />
+  <HelpKINode Title="IServiceSendMessageChannel interface">
+    <HelpKINode Title="IServiceSendMessageChannel Interface" Url="html/e3699e11-bc7e-b414-e41e-e91c05368b88.htm" />
+    <HelpKINode Title="IServiceSendMessageChannel Members" Url="html/9bf1aa9c-98ca-f3a7-9ee4-08567368a52c.htm" />
+    <HelpKINode Title="about IServiceSendMessageChannel interface" Url="html/e3699e11-bc7e-b414-e41e-e91c05368b88.htm" />
+    <HelpKINode Title="all members" Url="html/9bf1aa9c-98ca-f3a7-9ee4-08567368a52c.htm" />
+    <HelpKINode Title="events" Url="html/d0eca0b5-f2e1-f11d-bd3f-039864ab7e39.htm" />
+    <HelpKINode Title="methods" Url="html/0f52c272-3579-67f9-e9f6-0a99bde78cbd.htm" />
+    <HelpKINode Title="properties" Url="html/939dd544-ea89-28e9-88d6-3d83dd187902.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LeerMensajes method" Url="html/2cdc59aa-6a81-ecc7-fb91-6f0007a00514.htm" />
+  <HelpKINode Title="NextQuestion method" Url="html/f4185b77-53a9-8a9e-2097-16910770df44.htm" />
+  <HelpKINode Title="OnContinue method" Url="html/88d4d5c2-6572-901c-f2d3-ab4cc83bafb5.htm" />
+  <HelpKINode Title="OnPause method" Url="html/04509ec4-0c78-2701-278f-d0480267e29e.htm" />
+  <HelpKINode Title="OnStart method" Url="html/b1a2d7b1-9b08-ad57-dc19-6c8d67af0fa3.htm" />
+  <HelpKINode Title="OnStop method" Url="html/38a19541-fd09-3caa-14bf-9d21d4fb23a5.htm" />
+  <HelpKINode Title="ProjectInstaller class">
+    <HelpKINode Title="ProjectInstaller Class" Url="html/7ecc12eb-dd58-a3bd-e96b-c5caa1fb5e33.htm" />
+    <HelpKINode Title="ProjectInstaller Members" Url="html/7523e288-c5a9-560a-db6f-be592c10129e.htm" />
+    <HelpKINode Title="about ProjectInstaller class" Url="html/7ecc12eb-dd58-a3bd-e96b-c5caa1fb5e33.htm" />
+    <HelpKINode Title="all members" Url="html/7523e288-c5a9-560a-db6f-be592c10129e.htm" />
+    <HelpKINode Title="constructor" Url="html/2b5e3f91-d06d-54b7-c70b-43358e655801.htm" />
+    <HelpKINode Title="events" Url="html/92b0ddb9-c745-36a3-76b8-78c5c17e5c29.htm" />
+    <HelpKINode Title="methods" Url="html/fca932b4-4944-c10a-0304-988a0708f65e.htm" />
+    <HelpKINode Title="properties" Url="html/438b2845-c517-d324-c42f-85c49800373a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProjectInstaller.Dispose method" Url="html/2d1a5e1c-a201-a850-ccc8-856c62f42faf.htm" />
+  <HelpKINode Title="ProjectInstaller.ProjectInstaller constructor" Url="html/2b5e3f91-d06d-54b7-c70b-43358e655801.htm" />
+  <HelpKINode Title="Question method" Url="html/12b585c4-b9e8-18e9-b133-65c9ca1bca72.htm" />
+  <HelpKINode Title="QuestionsManager class">
+    <HelpKINode Title="QuestionsManager Class" Url="html/e6238f33-4a74-73b6-16b8-7ec32f24b28d.htm" />
+    <HelpKINode Title="QuestionsManager Members" Url="html/9d2c902f-1b3a-5dce-cbf8-67e8940d0a82.htm" />
+    <HelpKINode Title="about QuestionsManager class" Url="html/e6238f33-4a74-73b6-16b8-7ec32f24b28d.htm" />
+    <HelpKINode Title="all members" Url="html/9d2c902f-1b3a-5dce-cbf8-67e8940d0a82.htm" />
+    <HelpKINode Title="constructor" Url="html/0cd86420-1bea-a3ca-1992-ebd15f69a2b8.htm" />
+    <HelpKINode Title="methods" Url="html/01874763-9fc5-7060-68e6-c29ca6768be2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="QuestionsManager.AnswerQuestion method" Url="html/ff9c3f55-b0de-0bb3-0ec0-5dfbee96e1a8.htm" />
+  <HelpKINode Title="QuestionsManager.AskNextQuestion method" Url="html/52f90c37-5fa9-dcd3-e9a8-ebc2ac8af0a9.htm" />
+  <HelpKINode Title="QuestionsManager.HasActiveQuestion method" Url="html/e00f14e8-7af0-d429-27a8-07bf2932f97a.htm" />
+  <HelpKINode Title="QuestionsManager.HasNextQuestion method" Url="html/5b2449f3-c089-58d9-d649-fea64c9ca2a4.htm" />
+  <HelpKINode Title="QuestionsManager.InvalidatePreviousQuestion method" Url="html/9b561e9a-63aa-0877-749f-b1eec598f30a.htm" />
+  <HelpKINode Title="QuestionsManager.NextQuestion method" Url="html/f4185b77-53a9-8a9e-2097-16910770df44.htm" />
+  <HelpKINode Title="QuestionsManager.Question method" Url="html/12b585c4-b9e8-18e9-b133-65c9ca1bca72.htm" />
+  <HelpKINode Title="QuestionsManager.QuestionsManager constructor" Url="html/0cd86420-1bea-a3ca-1992-ebd15f69a2b8.htm" />
+  <HelpKINode Title="Respuesta property" Url="html/5406090c-b957-7280-0113-6a50e670125e.htm" />
+  <HelpKINode Title="SendMessage method">
+    <HelpKINode Title="IServiceSendMessage.SendMessage Method " Url="html/6482914d-b54f-0ea7-0522-dc2277edb4dc.htm" />
+    <HelpKINode Title="ServiceSendMessageClient.SendMessage Method " Url="html/e594a193-8c2e-5fbc-1db8-f9baeec20b15.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceHelper.DataManager namespace" Url="html/56f189c9-87ed-b107-7576-4f6ac2c95574.htm" />
+  <HelpKINode Title="ServiceHelper.DataManager.QuestionsManager class">
+    <HelpKINode Title="QuestionsManager Class" Url="html/e6238f33-4a74-73b6-16b8-7ec32f24b28d.htm" />
+    <HelpKINode Title="QuestionsManager Members" Url="html/9d2c902f-1b3a-5dce-cbf8-67e8940d0a82.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceHelper.SMSManager namespace" Url="html/26166e8c-4883-8940-086c-07d78594c120.htm" />
+  <HelpKINode Title="ServiceHelper.SMSManager.IServiceSendMessage interface">
+    <HelpKINode Title="IServiceSendMessage Interface" Url="html/310bcb17-9d60-027b-b10d-d892c778d5a1.htm" />
+    <HelpKINode Title="IServiceSendMessage Members" Url="html/ca7d6fba-bdb0-fcbd-02bd-60e0c4b14a83.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceHelper.SMSManager.IServiceSendMessageChannel interface">
+    <HelpKINode Title="IServiceSendMessageChannel Interface" Url="html/e3699e11-bc7e-b414-e41e-e91c05368b88.htm" />
+    <HelpKINode Title="IServiceSendMessageChannel Members" Url="html/9bf1aa9c-98ca-f3a7-9ee4-08567368a52c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceHelper.SMSManager.ServiceReadMessage class">
+    <HelpKINode Title="ServiceReadMessage Class" Url="html/2d180703-08d8-7acf-5587-c4875e4a103b.htm" />
+    <HelpKINode Title="ServiceReadMessage Members" Url="html/8bf244c9-fe67-d43e-1858-012bb387d7e0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceHelper.SMSManager.ServiceSendMessageClient class">
+    <HelpKINode Title="ServiceSendMessageClient Class" Url="html/666336dc-9af7-d781-f49d-6a592f9d683b.htm" />
+    <HelpKINode Title="ServiceSendMessageClient Members" Url="html/5b6f2ec0-a071-9db9-6f6d-13ecc08efcf3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceHelper.SMSManager.SMSAnswer class">
+    <HelpKINode Title="SMSAnswer Class" Url="html/700afc66-8db6-3b16-f0ed-8c8a1bd0bce4.htm" />
+    <HelpKINode Title="SMSAnswer Members" Url="html/57ef789a-9b94-09b1-429a-a3339941953f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceReadMessage class">
+    <HelpKINode Title="ServiceReadMessage Class" Url="html/2d180703-08d8-7acf-5587-c4875e4a103b.htm" />
+    <HelpKINode Title="ServiceReadMessage Members" Url="html/8bf244c9-fe67-d43e-1858-012bb387d7e0.htm" />
+    <HelpKINode Title="about ServiceReadMessage class" Url="html/2d180703-08d8-7acf-5587-c4875e4a103b.htm" />
+    <HelpKINode Title="all members" Url="html/8bf244c9-fe67-d43e-1858-012bb387d7e0.htm" />
+    <HelpKINode Title="constructor" Url="html/2792b054-fcb0-2a52-18ac-f9748046449f.htm" />
+    <HelpKINode Title="methods" Url="html/47871ffa-1dc1-b880-4606-d420d74ffc93.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceReadMessage.LeerMensajes method" Url="html/2cdc59aa-6a81-ecc7-fb91-6f0007a00514.htm" />
+  <HelpKINode Title="ServiceReadMessage.ServiceReadMessage constructor" Url="html/2792b054-fcb0-2a52-18ac-f9748046449f.htm" />
+  <HelpKINode Title="ServiceSendMessageClient class">
+    <HelpKINode Title="ServiceSendMessageClient Class" Url="html/666336dc-9af7-d781-f49d-6a592f9d683b.htm" />
+    <HelpKINode Title="ServiceSendMessageClient Members" Url="html/5b6f2ec0-a071-9db9-6f6d-13ecc08efcf3.htm" />
+    <HelpKINode Title="about ServiceSendMessageClient class" Url="html/666336dc-9af7-d781-f49d-6a592f9d683b.htm" />
+    <HelpKINode Title="all members" Url="html/5b6f2ec0-a071-9db9-6f6d-13ecc08efcf3.htm" />
+    <HelpKINode Title="constructor" Url="html/a9e3eb18-980a-9b0d-0deb-c88b3528fcd6.htm" />
+    <HelpKINode Title="methods" Url="html/f6922038-e678-6ee6-db1f-cbcb3cc28988.htm" />
+    <HelpKINode Title="properties" Url="html/a2afc4b3-ff7d-c6df-b497-629a379b21e0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceSendMessageClient.SendMessage method" Url="html/e594a193-8c2e-5fbc-1db8-f9baeec20b15.htm" />
+  <HelpKINode Title="ServiceSendMessageClient.ServiceSendMessageClient constructor" Url="html/a9e3eb18-980a-9b0d-0deb-c88b3528fcd6.htm" />
+  <HelpKINode Title="SMSAnswer class">
+    <HelpKINode Title="SMSAnswer Class" Url="html/700afc66-8db6-3b16-f0ed-8c8a1bd0bce4.htm" />
+    <HelpKINode Title="SMSAnswer Members" Url="html/57ef789a-9b94-09b1-429a-a3339941953f.htm" />
+    <HelpKINode Title="about SMSAnswer class" Url="html/700afc66-8db6-3b16-f0ed-8c8a1bd0bce4.htm" />
+    <HelpKINode Title="all members" Url="html/57ef789a-9b94-09b1-429a-a3339941953f.htm" />
+    <HelpKINode Title="constructor" Url="html/47130109-ed24-e76b-69f6-6fcc6a7cf795.htm" />
+    <HelpKINode Title="methods" Url="html/c25a7bef-d32f-7814-c126-9a673a139f12.htm" />
+    <HelpKINode Title="properties" Url="html/38e045dd-f65d-0507-998a-b86fa984b318.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SMSAnswer.Celular property" Url="html/1e433c04-9632-e928-bcf0-46021c1f2ad4.htm" />
+  <HelpKINode Title="SMSAnswer.Fecha property" Url="html/89898c89-c623-005c-101e-16d69c336639.htm" />
+  <HelpKINode Title="SMSAnswer.Id property" Url="html/2b6a5aab-4041-0523-ec86-bb3b51e5800c.htm" />
+  <HelpKINode Title="SMSAnswer.Respuesta property" Url="html/5406090c-b957-7280-0113-6a50e670125e.htm" />
+  <HelpKINode Title="SMSAnswer.SMSAnswer constructor" Url="html/47130109-ed24-e76b-69f6-6fcc6a7cf795.htm" />
+  <HelpKINode Title="SMSReceiverService class">
+    <HelpKINode Title="SMSReceiverService Class" Url="html/461139aa-fcb4-7f26-8908-90f06d784fbd.htm" />
+    <HelpKINode Title="SMSReceiverService Members" Url="html/d14873d7-f061-1f6b-eb08-ff25a540e00b.htm" />
+    <HelpKINode Title="about SMSReceiverService class" Url="html/461139aa-fcb4-7f26-8908-90f06d784fbd.htm" />
+    <HelpKINode Title="all members" Url="html/d14873d7-f061-1f6b-eb08-ff25a540e00b.htm" />
+    <HelpKINode Title="constructor" Url="html/7bbe1270-2218-5e71-aa9a-a32b52317cd4.htm" />
+    <HelpKINode Title="events" Url="html/bc454ed8-9871-cd5e-b5d0-98d2c3ca2220.htm" />
+    <HelpKINode Title="methods" Url="html/452813ee-b12b-c91d-aa25-13fa2c6944b9.htm" />
+    <HelpKINode Title="properties" Url="html/d4425310-91db-c371-3e92-3c8efe0b7c4f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SMSReceiverService namespace" Url="html/e31cc5f5-c3e0-9cdf-d8d3-1589a8675dd6.htm" />
+  <HelpKINode Title="SMSReceiverService.Dispose method" Url="html/e3e5e023-3304-3642-6dec-8f58f7a67481.htm" />
+  <HelpKINode Title="SMSReceiverService.InitializeLog method" Url="html/0380700c-8b31-9f06-27f2-76aee5e6b2d0.htm" />
+  <HelpKINode Title="SMSReceiverService.InitializeTimer method" Url="html/03e699d8-717b-0d84-2cb0-71409d74c71b.htm" />
+  <HelpKINode Title="SMSReceiverService.OnContinue method" Url="html/88d4d5c2-6572-901c-f2d3-ab4cc83bafb5.htm" />
+  <HelpKINode Title="SMSReceiverService.OnPause method" Url="html/04509ec4-0c78-2701-278f-d0480267e29e.htm" />
+  <HelpKINode Title="SMSReceiverService.OnStart method" Url="html/b1a2d7b1-9b08-ad57-dc19-6c8d67af0fa3.htm" />
+  <HelpKINode Title="SMSReceiverService.OnStop method" Url="html/38a19541-fd09-3caa-14bf-9d21d4fb23a5.htm" />
+  <HelpKINode Title="SMSReceiverService.ProjectInstaller class">
+    <HelpKINode Title="ProjectInstaller Class" Url="html/7ecc12eb-dd58-a3bd-e96b-c5caa1fb5e33.htm" />
+    <HelpKINode Title="ProjectInstaller Members" Url="html/7523e288-c5a9-560a-db6f-be592c10129e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SMSReceiverService.SMSReceiverService class">
+    <HelpKINode Title="SMSReceiverService Class" Url="html/461139aa-fcb4-7f26-8908-90f06d784fbd.htm" />
+    <HelpKINode Title="SMSReceiverService Members" Url="html/d14873d7-f061-1f6b-eb08-ff25a540e00b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SMSReceiverService.SMSReceiverService constructor" Url="html/7bbe1270-2218-5e71-aa9a-a32b52317cd4.htm" />
+  <HelpKINode Title="SMSReceiverService.StartTimer method" Url="html/e452224f-9d0b-be15-d2e8-4ed51371aee1.htm" />
+  <HelpKINode Title="SMSReceiverService.StopTimer method" Url="html/1c43b90a-5032-adae-8ca2-bf1c34fdb784.htm" />
+  <HelpKINode Title="StartTimer method" Url="html/e452224f-9d0b-be15-d2e8-4ed51371aee1.htm" />
+  <HelpKINode Title="StopTimer method" Url="html/1c43b90a-5032-adae-8ca2-bf1c34fdb784.htm" />
+</HelpKI>
