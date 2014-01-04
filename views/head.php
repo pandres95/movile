@@ -22,9 +22,15 @@
 <![endif]-->
         <!-- jQuery javascript -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="/movile/xhtml/js/bootstrap.js"></script>
+        <!-- Page Specific Plugins -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        
         <style type="text/css">
             #map { height: 250px; }
         </style>
+        
     </head>
     
     <body>
@@ -56,27 +62,25 @@ foreach ($data as $key => $value) {
                     
                     <ul class="nav navbar-nav navbar-right navbar-user">
                         <li class="dropdown messages-dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensajes <span class="badge">7</span> <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensajes <span id="new_messages_number" class="badge"></span> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-header">7 Mensajes Nuevos</li>
-                                <li class="message-preview">
+                                <li class="message-preview unread">
                                     <a href="#">
-                                        <span class="avatar"><img src="http://placehold.it/50x50"></span>
                                         <span class="name">Andrea Ramirez:</span>
                                         <span class="message">Hola, te recuerdo el envio de las encuestas...</span>
                                         <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
                                     </a>
                                 </li>
                                 <li class="divider"></li>
-                                <li class="message-preview">
-                                    <a href="#">
-                                        <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                                        <span class="name">Pedro Martinez:</span>
-                                        <span class="message">Recordatorio, Reunion mañana a las 8pm...</span>
-                                        <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
+                                <!--<li class="message-preview">
+<a href="#">
+<span class="name">Andrea Ramirez:</span>
+<span class="message">Hola, te recuerdo el envio de las encuestas...</span>
+<span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+</a>
+</li>
+<li class="divider"></li>-->
                                 <li><a href="#">Bandeja de Mensajes <span class="badge">7</span></a></li>
                             </ul>
                         </li>

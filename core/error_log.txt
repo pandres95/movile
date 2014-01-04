@@ -1688,3 +1688,1051 @@
 [03-Jan-2014 22:46:35 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
 [03-Jan-2014 22:46:35 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
 [03-Jan-2014 22:46:35 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:19 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:39:19 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:19 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:19 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:20 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:39:20 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:20 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:20 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:39:20 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:20 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:20 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:39:20 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:20 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:39:20 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:39:20 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:39:20 UTC] PHP Stack trace:
+[03-Jan-2014 23:39:20 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:39:20 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:39:20 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:41:32 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:41:32 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:41:32 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:41:32 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:41:32 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:41:32 UTC] PHP Stack trace:
+[03-Jan-2014 23:41:32 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:41:32 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:41:32 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:14 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:42:14 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:14 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:14 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:15 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:42:15 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:15 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:15 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:42:15 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:15 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:15 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:42:15 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:42:15 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:15 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:16 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:42:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:16 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:42:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:16 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:42:16 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:42:16 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:42:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:42:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:42:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:42:16 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:34 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:48:34 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:34 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:34 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:35 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:48:35 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:35 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:35 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:35 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:48:35 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:35 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:35 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:35 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:35 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:48:35 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:48:35 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:35 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:35 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:35 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:35 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:48:35 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:35 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:35 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:35 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:48:35 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:35 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:35 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:35 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:35 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:48:35 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:48:35 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:35 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:35 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:35 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:36 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:48:36 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:36 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:36 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:36 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:48:36 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:36 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:36 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:36 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:36 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:48:36 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:48:36 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:36 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:36 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:36 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:36 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:48:36 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:36 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:36 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:36 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:48:36 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:36 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:36 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:36 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:48:36 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:48:36 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:48:36 UTC] PHP Stack trace:
+[03-Jan-2014 23:48:36 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:48:36 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:48:36 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:09 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:49:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:16 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:49:16 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:16 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:16 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:49:16 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:16 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:16 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:49:16 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:16 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:16 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:49:16 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:49:16 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:16 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:16 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:16 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:49:40 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:49:40 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:49:40 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:49:40 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:49:40 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:49:40 UTC] PHP Stack trace:
+[03-Jan-2014 23:49:40 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:49:40 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:49:40 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:48 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:50:48 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:48 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:48 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:55 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:50:55 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:55 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:55 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:50:55 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:55 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:55 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:50:55 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:55 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:50:55 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:50:55 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:50:55 UTC] PHP Stack trace:
+[03-Jan-2014 23:50:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:50:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:50:55 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:17 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:51:17 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:17 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:17 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:18 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:51:18 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:18 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:18 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:51:18 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:18 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:18 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:51:18 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:18 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:51:18 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:51:18 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:51:18 UTC] PHP Stack trace:
+[03-Jan-2014 23:51:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:51:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:51:18 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:04 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:52:04 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:04 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:04 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:05 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:52:05 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:05 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:05 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:52:05 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:05 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:05 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:52:05 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:05 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:52:05 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:52:05 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:52:05 UTC] PHP Stack trace:
+[03-Jan-2014 23:52:05 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:52:05 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:52:05 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:29 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:53:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:29 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:53:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:29 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:53:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:29 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:29 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:53:29 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:30 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:30 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:53:30 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:30 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:30 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:53:30 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:30 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:53:30 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:53:30 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:53:30 UTC] PHP Stack trace:
+[03-Jan-2014 23:53:30 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:53:30 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:53:30 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:23 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:55:23 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:23 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:23 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:24 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:24 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:24 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:55:24 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:24 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:24 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:55:24 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:55:24 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:24 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:24 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:24 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:24 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:55:24 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:24 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:24 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:55:24 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:55:24 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:24 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:25 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:25 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:25 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:25 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:25 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:55:25 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:25 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:25 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:25 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:25 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:55:25 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:55:25 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:25 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:25 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:25 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:25 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:25 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:25 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:25 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:25 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:55:25 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:25 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:25 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:25 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:25 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:55:25 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:55:25 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:25 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:25 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:25 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:42 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:55:42 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:42 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:42 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:43 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:55:43 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:43 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:43 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:55:43 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:43 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:43 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:55:43 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:55:43 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:43 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:44 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:55:44 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:44 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:44 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:44 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:55:44 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:44 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:44 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:44 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:55:44 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:55:44 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:55:44 UTC] PHP Stack trace:
+[03-Jan-2014 23:55:44 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:55:44 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:55:44 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:09 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:09 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:56:09 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:09 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:09 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:56:09 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:09 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:09 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:56:09 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:56:09 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:09 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:09 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:09 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:10 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:10 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:10 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:10 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:10 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:56:10 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:10 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:10 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:10 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:10 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:56:10 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:56:10 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:10 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:10 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:10 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:27 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:56:27 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:29 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:56:29 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:29 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:29 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:56:29 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:29 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:29 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:56:29 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:29 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:29 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:56:29 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:56:29 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:29 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:29 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:29 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:38 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[03-Jan-2014 23:56:38 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:38 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:38 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:41 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[03-Jan-2014 23:56:41 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:41 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:41 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[03-Jan-2014 23:56:41 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:41 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:41 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[03-Jan-2014 23:56:41 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:41 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[03-Jan-2014 23:56:41 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[03-Jan-2014 23:56:41 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[03-Jan-2014 23:56:41 UTC] PHP Stack trace:
+[03-Jan-2014 23:56:41 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[03-Jan-2014 23:56:41 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[03-Jan-2014 23:56:41 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:24 UTC] PHP Strict standards:  Non-static method inicio::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[04-Jan-2014 01:24:24 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:27 UTC] PHP Strict standards:  Non-static method info::smstotales() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:24:27 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:27 UTC] PHP Warning:  Missing argument 1 for infoModel::smsTotales(), called in C:\wamp\www\movile\controllers\controller.info.php on line 58 and defined in C:\wamp\www\movile\models\model.info.php on line 43
+[04-Jan-2014 01:24:27 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:27 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:27 UTC] PHP   4. infoModel->smsTotales() C:\wamp\www\movile\controllers\controller.info.php:58
+[04-Jan-2014 01:24:27 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 59
+[04-Jan-2014 01:24:27 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:27 UTC] PHP   3. info::smstotales() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:27 UTC] PHP Strict standards:  Non-static method info::smsfallidos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:24:27 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:27 UTC] PHP Warning:  Missing argument 1 for infoModel::smsFallidos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 45 and defined in C:\wamp\www\movile\models\model.info.php on line 32
+[04-Jan-2014 01:24:27 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:27 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:27 UTC] PHP   4. infoModel->smsFallidos() C:\wamp\www\movile\controllers\controller.info.php:45
+[04-Jan-2014 01:24:27 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 46
+[04-Jan-2014 01:24:27 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:27 UTC] PHP   3. info::smsfallidos() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:28 UTC] PHP Strict standards:  Non-static method info::numeroencuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:24:28 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:28 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:28 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:28 UTC] PHP Warning:  Missing argument 1 for infoModel::numeroEncuestas(), called in C:\wamp\www\movile\controllers\controller.info.php on line 19 and defined in C:\wamp\www\movile\models\model.info.php on line 9
+[04-Jan-2014 01:24:28 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:28 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:28 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:28 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:28 UTC] PHP   4. infoModel->numeroEncuestas() C:\wamp\www\movile\controllers\controller.info.php:19
+[04-Jan-2014 01:24:28 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 20
+[04-Jan-2014 01:24:28 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:28 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:28 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:28 UTC] PHP   3. info::numeroencuestas() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:28 UTC] PHP Strict standards:  Non-static method info::smscorrectos() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:24:28 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:28 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:28 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:28 UTC] PHP Warning:  Missing argument 1 for infoModel::smsCorrectos(), called in C:\wamp\www\movile\controllers\controller.info.php on line 32 and defined in C:\wamp\www\movile\models\model.info.php on line 21
+[04-Jan-2014 01:24:28 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:28 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:28 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:28 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:28 UTC] PHP   4. infoModel->smsCorrectos() C:\wamp\www\movile\controllers\controller.info.php:32
+[04-Jan-2014 01:24:28 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.info.php on line 33
+[04-Jan-2014 01:24:28 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:28 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:28 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:28 UTC] PHP   3. info::smscorrectos() C:\wamp\www\movile\core\utils.php:30
+[04-Jan-2014 01:24:37 UTC] PHP Strict standards:  Non-static method enviosms::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[04-Jan-2014 01:24:37 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:37 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:37 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:38 UTC] PHP Strict standards:  Non-static method enviosms::encuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:24:38 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:38 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:38 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:42 UTC] PHP Strict standards:  Non-static method enviosms::index() should not be called statically in C:\wamp\www\movile\core\utils.php on line 35
+[04-Jan-2014 01:24:42 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:42 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:42 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:24:43 UTC] PHP Strict standards:  Non-static method enviosms::encuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:24:43 UTC] PHP Stack trace:
+[04-Jan-2014 01:24:43 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:24:43 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:26:55 UTC] PHP Strict standards:  Non-static method enviosms::encuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:26:55 UTC] PHP Stack trace:
+[04-Jan-2014 01:26:55 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:26:55 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
+[04-Jan-2014 01:28:00 UTC] PHP Strict standards:  Non-static method enviosms::encuestas() should not be called statically in C:\wamp\www\movile\core\utils.php on line 30
+[04-Jan-2014 01:28:00 UTC] PHP Stack trace:
+[04-Jan-2014 01:28:00 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[04-Jan-2014 01:28:00 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:37
