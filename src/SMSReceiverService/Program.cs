@@ -16,7 +16,7 @@ namespace SMSReceiverService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
 			{ 
-				new SMSReceiverService() 
+				new SMSReceiverService()
 			};
             ServiceBase.Run(ServicesToRun);
         }

@@ -141,27 +141,51 @@ namespace SMSReceiverService
                         {
                             int nQ = qManager.NextQuestion(ans.Celular);
                             string message = qManager.Question(nQ);
-                            if (qManager.AskNextQuestion(ans.Celular))
+
+                            try
                             {
+
                                 ServiceSendMessageClient sms = new ServiceSendMessageClient();
-                                sms.SendMessage(configuracion.SMSUser, configuracion.SMSPassword, message,
+                                string res = sms.SendMessage(configuracion.SMSUser, configuracion.SMSPassword, message,
                                     ans.Celular);
-                                Log.WriteEntry(
-                                    String.Format(
-                                        "[{0}] Siguiente pregunta enviada correctamente",
-                                        DateTime.Now
-                                    )
-                                );
+                                if (res != "")
+                                {
+
+                                    if (qManager.AskNextQuestion(ans.Celular))
+                                    {
+                                        Log.WriteEntry(
+                                            String.Format(
+                                                "[{0}] {1}",
+                                                DateTime.Now,
+                                                res
+                                            )
+                                        );
+                                    }
+                                    else
+                                    {
+                                        Log.WriteEntry(
+                                            String.Format(
+                                                "[{0}] La siguiente pregunta no pudo ser correctamente enviada. Por favor, revise las configuraciones de envío de SMS.",
+                                                DateTime.Now
+                                            )
+                                        );
+                                    }
+                                    
+                                }
+                                
+
                             }
-                            else
+                            catch (Exception e)
                             {
-                                Log.WriteEntry(
-                                    String.Format(
-                                        "[{0}] La siguiente pregunta no pudo ser correctamente enviada. Por favor, revise las configuraciones de envío de SMS.",
-                                        DateTime.Now
-                                    )
-                                );
+                                Log.WriteEntry(String.Format(
+                                    "[{0}] No se pudo enviar el mensaje. Procediendo a registrar el inconveniente.",
+                                    DateTime.Now
+                                    ));
+                                new SMSErrorManager(configuracion.DbHost, configuracion.DbUser,
+                    configuracion.DbPassword, configuracion.DbSchema).LogSMSError(ans.Celular);
                             }
+
+                            
                         }
                         else
                         {
