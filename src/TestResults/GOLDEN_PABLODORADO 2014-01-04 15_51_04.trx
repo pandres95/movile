@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5736dd5b-8693-4fe8-98f0-c9d02525fb11" name="GOLDEN@PABLODORADO 2014-01-04 15:51:04" runUser="PABLODORADO\GOLDEN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="9d736ae7-3d77-47bf-985d-8471d4535013">
+    <Deployment runDeploymentRoot="GOLDEN_PABLODORADO 2014-01-04 15_51_04">
+      <DeploymentItem filename="C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\bin\Debug\ServiceHelper.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-04T15:51:04.4940000-05:00" queuing="2014-01-04T15:51:04.7920000-05:00" start="2014-01-04T15:51:04.8500000-05:00" finish="2014-01-04T15:51:07.1480000-05:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LogSMSErrorTest" storage="c:\users\golden\documents\sms_receiver_service\src\servicehelpertest\bin\debug\questionstest.dll" id="54a585fc-8b39-b06e-ecd7-3275d2f927d8">
+      <Execution id="566a7729-e54e-4841-af54-96d464392a28" />
+      <TestMethod codeBase="C:/Users/GOLDEN/Documents/sms_receiver_service/src/ServiceHelperTest/bin/Debug/QuestionsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="QuestionsTest.SMSErrorManagerTest, QuestionsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogSMSErrorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" executionId="566a7729-e54e-4841-af54-96d464392a28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="566a7729-e54e-4841-af54-96d464392a28" testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" testName="LogSMSErrorTest" computerName="PABLODORADO" duration="00:00:01.0213383" startTime="2014-01-04T15:51:05.0570000-05:00" endTime="2014-01-04T15:51:06.9040000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="566a7729-e54e-4841-af54-96d464392a28">
+      <Output>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. Un método que no devuelve ningún valor no se puede comprobar.</Message>
+          <StackTrace>   en QuestionsTest.SMSErrorManagerTest.LogSMSErrorTest() en C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\SMSErrorManagerTest.cs:línea 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

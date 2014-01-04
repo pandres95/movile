@@ -1,0 +1,7 @@
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Debug\QuestionsTest.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Debug\QuestionsTest.pdb
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Debug\ServiceHelper.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Debug\ServiceHelper.pdb
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\obj\Debug\QuestionsTest.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\obj\Debug\QuestionsTest.pdb

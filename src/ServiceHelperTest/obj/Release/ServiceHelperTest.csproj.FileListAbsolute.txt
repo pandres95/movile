@@ -1,0 +1,8 @@
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Release\QuestionsTest.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Release\QuestionsTest.pdb
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Release\ServiceHelper.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Release\ServiceHelper.pdb
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\bin\Release\ServiceHelper.xml
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\obj\Release\ResolveAssemblyReference.cache
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\obj\Release\QuestionsTest.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\obj\Release\QuestionsTest.pdb

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SMSReceiverService</name>
+    </assembly>
+    <members>
+        <member name="F:SMSReceiverService.ProjectInstaller.components">
+            <summary>
+            Variable del diseñador requerida.
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.ProjectInstaller.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén utilizando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario, false.</param>
+        </member>
+        <member name="M:SMSReceiverService.ProjectInstaller.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido del método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:SMSReceiverService.SMSReceiverService">
+            <summary>
+            Punto principal del Servicio de Windows encargado de recibir y procesar los mensajes de texto de los usuarios.
+            </summary>
+        </member>
+        <member name="F:SMSReceiverService.SMSReceiverService.components">
+            <summary> 
+            Variable del diseñador requerida.
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén utilizando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario, false.</param>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar 
+            el contenido del método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.#ctor">
+            <summary>
+            Constructor predeterminado
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.OnStart(System.String[])">
+            <summary>
+            Evento de inicio del servicio.
+            </summary>
+            <param name="args">Argumentos enviados por medio de la línea de comandos que inicializo el proceso.</param>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.TimerElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Ocurre cuando ha pasado el intervalo de espera. 
+            Este evento está encargado del procesamiento de la lectura de los mensajes entrantes, y del envio para procesamiento.
+            </summary>
+            <param name="sender">El objeto que envía el evento. Normalmente es el timer</param>
+            <param name="e">Los parametros del evento</param>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.ProcessAnswer(ServiceHelper.SMSManager.SMSAnswer)">
+            <summary>
+            Procesa una respuesta y ejecuta las acciones de envío de nuevos mensajes de pregunta.
+            </summary>
+            <param name="ans">Descripción de la respuesta del usuario</param>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.OnContinue">
+            <summary>
+            Evento que ocurre al retornar el servicio de la pausa
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.OnPause">
+            <summary>
+            Evento que ocurre al pausar el servicio
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.OnStop">
+            <summary>
+            Evento que ocurre al detener el servicio
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+    </members>
+</doc>

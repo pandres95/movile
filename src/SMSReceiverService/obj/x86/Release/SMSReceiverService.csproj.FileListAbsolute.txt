@@ -1,0 +1,13 @@
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe.config
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.pdb
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\ServiceHelper.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\ServiceHelper.pdb
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\ServiceHelper.xml
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.ProjectInstaller.resources
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.SMSReceiverService.resources
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.exe
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.pdb

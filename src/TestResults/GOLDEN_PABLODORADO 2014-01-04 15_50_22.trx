@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e6bc013e-b98e-45d7-bc12-8b028d21a60f" name="GOLDEN@PABLODORADO 2014-01-04 15:50:22" runUser="PABLODORADO\GOLDEN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="d345808b-d011-419f-9c94-b4f2905f1d9a">
+    <Deployment runDeploymentRoot="GOLDEN_PABLODORADO 2014-01-04 15_50_22">
+      <DeploymentItem filename="C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\bin\Debug\ServiceHelper.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-04T15:50:22.0440000-05:00" queuing="2014-01-04T15:50:22.3160000-05:00" start="2014-01-04T15:50:22.3580000-05:00" finish="2014-01-04T15:50:24.4410000-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LogSMSErrorTest" storage="c:\users\golden\documents\sms_receiver_service\src\servicehelpertest\bin\debug\questionstest.dll" id="54a585fc-8b39-b06e-ecd7-3275d2f927d8">
+      <Execution id="51219f14-3b42-4ed1-882b-41fc6fe52a98" />
+      <TestMethod codeBase="C:/Users/GOLDEN/Documents/sms_receiver_service/src/ServiceHelperTest/bin/Debug/QuestionsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="QuestionsTest.SMSErrorManagerTest, QuestionsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogSMSErrorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" executionId="51219f14-3b42-4ed1-882b-41fc6fe52a98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="51219f14-3b42-4ed1-882b-41fc6fe52a98" testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" testName="LogSMSErrorTest" computerName="PABLODORADO" duration="00:00:01.3539884" startTime="2014-01-04T15:50:22.3800000-05:00" endTime="2014-01-04T15:50:24.2090000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51219f14-3b42-4ed1-882b-41fc6fe52a98">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba QuestionsTest.SMSErrorManagerTest.LogSMSErrorTest produjo la excepción: 
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <StackTrace>    en ServiceHelper.DataManager.SMSErrorManager.LogSMSError(String celular) en C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\DataManager\SMSErrorManager.cs:línea 64
+   en QuestionsTest.SMSErrorManagerTest.LogSMSErrorTest() en C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\SMSErrorManagerTest.cs:línea 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHelperTest", "Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSWindowsMonitor", "SMSWindowsMonitor\SMSWindowsMonitor.csproj", "{DB5ED315-DCF9-415D-8BC3-2420CD007A0D}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SMSWindowsInstaller", "SMSWindowsInstaller\SMSWindowsInstaller.vdproj", "{70A8F411-FF34-4045-9A59-BB95C1C68539}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,12 @@ Global
 		{DB5ED315-DCF9-415D-8BC3-2420CD007A0D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{DB5ED315-DCF9-415D-8BC3-2420CD007A0D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DB5ED315-DCF9-415D-8BC3-2420CD007A0D}.Release|x86.ActiveCfg = Release|Any CPU
+		{70A8F411-FF34-4045-9A59-BB95C1C68539}.Debug|Any CPU.ActiveCfg = Debug
+		{70A8F411-FF34-4045-9A59-BB95C1C68539}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{70A8F411-FF34-4045-9A59-BB95C1C68539}.Debug|x86.ActiveCfg = Debug
+		{70A8F411-FF34-4045-9A59-BB95C1C68539}.Release|Any CPU.ActiveCfg = Release
+		{70A8F411-FF34-4045-9A59-BB95C1C68539}.Release|Mixed Platforms.ActiveCfg = Release
+		{70A8F411-FF34-4045-9A59-BB95C1C68539}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

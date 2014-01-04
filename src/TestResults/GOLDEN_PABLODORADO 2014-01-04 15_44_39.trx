@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="11f52732-de08-418f-9ad5-5b9fbbb3c047" name="GOLDEN@PABLODORADO 2014-01-04 15:44:39" runUser="PABLODORADO\GOLDEN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="29394d14-9e1c-49d9-aa38-03fc92d9a819">
+    <Deployment runDeploymentRoot="GOLDEN_PABLODORADO 2014-01-04 15_44_39">
+      <DeploymentItem filename="C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\bin\Debug\ServiceHelper.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-04T15:44:39.4610000-05:00" queuing="2014-01-04T15:44:47.1960000-05:00" start="2014-01-04T15:44:47.4100000-05:00" finish="2014-01-04T15:45:20.9660000-05:00" />
+  <ResultSummary outcome="Aborted">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LogSMSErrorTest" storage="c:\users\golden\documents\sms_receiver_service\src\servicehelpertest\bin\debug\questionstest.dll" id="54a585fc-8b39-b06e-ecd7-3275d2f927d8">
+      <Execution id="ff56b265-ba11-4b68-b097-3ffa300f253f" />
+      <TestMethod codeBase="C:/Users/GOLDEN/Documents/sms_receiver_service/src/ServiceHelperTest/bin/Debug/QuestionsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="QuestionsTest.SMSErrorManagerTest, QuestionsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogSMSErrorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" executionId="ff56b265-ba11-4b68-b097-3ffa300f253f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ff56b265-ba11-4b68-b097-3ffa300f253f" testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" testName="LogSMSErrorTest" computerName="PABLODORADO" duration="00:00:16.0750000" startTime="2014-01-04T15:44:47.5840000-05:00" endTime="2014-01-04T15:45:03.6590000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff56b265-ba11-4b68-b097-3ffa300f253f">
+      <Output>
+        <ErrorInfo>
+          <Message>El usuario anuló la ejecución de pruebas.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

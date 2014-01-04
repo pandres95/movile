@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9f043fa2-b017-4473-84c4-d937a873806f" name="GOLDEN@PABLODORADO 2014-01-04 15:46:46" runUser="PABLODORADO\GOLDEN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Configuración de pruebas predeterminada" id="a94e20e7-7fe2-4e3e-91f7-9b0bb0e6135d">
+    <Deployment runDeploymentRoot="GOLDEN_PABLODORADO 2014-01-04 15_46_46">
+      <DeploymentItem filename="C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\bin\Debug\ServiceHelper.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-04T15:46:46.9430000-05:00" queuing="2014-01-04T15:46:47.1480000-05:00" start="2014-01-04T15:46:47.3720000-05:00" finish="2014-01-04T15:46:51.0040000-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LogSMSErrorTest" storage="c:\users\golden\documents\sms_receiver_service\src\servicehelpertest\bin\debug\questionstest.dll" id="54a585fc-8b39-b06e-ecd7-3275d2f927d8">
+      <Execution id="71b5b83d-8d58-4b63-b7d5-fe491c4b2fc0" />
+      <TestMethod codeBase="C:/Users/GOLDEN/Documents/sms_receiver_service/src/ServiceHelperTest/bin/Debug/QuestionsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="QuestionsTest.SMSErrorManagerTest, QuestionsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogSMSErrorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" executionId="71b5b83d-8d58-4b63-b7d5-fe491c4b2fc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="71b5b83d-8d58-4b63-b7d5-fe491c4b2fc0" testId="54a585fc-8b39-b06e-ecd7-3275d2f927d8" testName="LogSMSErrorTest" computerName="PABLODORADO" duration="00:00:02.9017403" startTime="2014-01-04T15:46:47.4100000-05:00" endTime="2014-01-04T15:46:50.8740000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71b5b83d-8d58-4b63-b7d5-fe491c4b2fc0">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba QuestionsTest.SMSErrorManagerTest.LogSMSErrorTest produjo la excepción: 
+MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY'</Message>
+          <StackTrace>    en ServiceHelper.DataManager.SMSErrorManager.LogSMSError(String celular) en C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\DataManager\SMSErrorManager.cs:línea 64
+   en QuestionsTest.SMSErrorManagerTest.LogSMSErrorTest() en C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelperTest\SMSErrorManagerTest.cs:línea 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

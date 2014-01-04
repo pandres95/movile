@@ -1,0 +1,5 @@
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\bin\Release\ServiceHelper.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\bin\Release\ServiceHelper.pdb
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\obj\Release\ResolveAssemblyReference.cache
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\obj\Release\ServiceHelper.dll
+C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\obj\Release\ServiceHelper.pdb

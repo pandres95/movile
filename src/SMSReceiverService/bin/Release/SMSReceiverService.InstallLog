@@ -1,0 +1,43 @@
+﻿Instalando ensamblado 'C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.InstallLog
+   assemblypath = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+Instalando el servicio SMSReceiverService...
+El servicio SMSReceiverService se ha instalado correctamente.
+Creando el origen de EventLog SMSReceiverService en el registro Application...
+Confirmando ensamblado 'C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.InstallLog
+   assemblypath = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+Desinstalando ensamblado 'C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.InstallLog
+   assemblypath = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+Quitando el origen de EventLog SMSReceiverService.
+Se está quitando el servicio SMSReceiverService del sistema...
+El servicio SMSReceiverService se ha quitado correctamente del sistema.
+Intento de detener el servicio SMSReceiverService.
+Instalando ensamblado 'C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.InstallLog
+   assemblypath = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+Instalando el servicio SMSReceiverService...
+El servicio SMSReceiverService se ha instalado correctamente.
+Creando el origen de EventLog SMSReceiverService en el registro Application...
+Confirmando ensamblado 'C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.InstallLog
+   assemblypath = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+Desinstalando ensamblado 'C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.InstallLog
+   assemblypath = C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+Quitando el origen de EventLog SMSReceiverService.
+Se está quitando el servicio SMSReceiverService del sistema...
+El servicio SMSReceiverService se ha quitado correctamente del sistema.
