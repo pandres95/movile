@@ -3,6 +3,7 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteRule ^xhtml/(.*)$ xhtml/$1 [L]
 RewriteRule ^controllers/(.*)$ controllers/$1 [L]
+RewriteRule ^models/(.*)$ models/$1 [L]
 
 RewriteCond $1 !^(index\.php|images|robots\.txt)
 RewriteRule ^(.*)$ index.php?r=$1 [L]
