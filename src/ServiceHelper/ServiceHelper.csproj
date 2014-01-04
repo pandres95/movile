@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="DataManager\DatabaseConnection.cs" />
     <Compile Include="DataManager\QuestionsManager.cs" />
+    <Compile Include="DataManager\SMSErrorManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SMSManager\ServiceSendMessage.cs" />
     <Compile Include="SMSManager\ServiceReadMessage.cs" />
