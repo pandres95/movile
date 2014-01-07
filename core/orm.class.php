@@ -22,7 +22,7 @@ class orm extends core{
 
 	/*  Query Method  */
 	public static function query($sql_data = ''){
-
+        $datainf = null;
 		$sql = $sql_data;
 		self::$results = $data = mysqli_query(self::$cnx,$sql);
 		if(count(self::$results) > 0){

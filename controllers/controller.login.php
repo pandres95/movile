@@ -4,8 +4,10 @@ class login extends Controller{
     public static $mailengine;
     
     public function login(){
-        if($_SESSION['u_session']['pase']){
-            header('location: /movile/');
+        if(isset($_SESSION['u_session'])){
+            if($_SESSION['u_session']['pase']){
+                header('location: /movile/');
+            }
         }
         $this->loadModel('users');
     }	
@@ -22,7 +24,7 @@ class login extends Controller{
     
     public function auth(){
         $auth = json_decode(Controller::getModel('users')->validaUsario($_POST));
-        if(!$auth->error){
+        if(!isset($auth->error)){
             $_SESSION['u_session']['data'] = serialize($auth);
             $_SESSION['u_session']['pase'] = true;
             $_SESSION['u_session']['nombre'] = $auth[0]->nombre;
@@ -31,13 +33,12 @@ class login extends Controller{
             header("Location: /movile/login");
         }
     }
-        
+    
     public function logout(){
         $_SESSION['u_session'] = NULL;
         unset($_SESSION['u_session']);
         header('location: /movile/');
     }
-    
     
 }
 

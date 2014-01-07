@@ -26,12 +26,10 @@ class core {
     
     public static function SQLConnect($params){
         try{
-            //self::$cnx = mysqli_connect($params['host'],$params['user'],$params['pass'],$params['db']);
-            self::$cnx = mysqli_connect($params['host'],$params['user'],$params['pass'],$params['db']) or
-                die("Error: " . mysqli_error(self::$cnx));
+            self::$cnx = mysqli_connect($params['host'],$params['user'],$params['pass'],$params['db']);
             self::$cnx->set_charset('utf8');
         }catch(Exception $ex){
-            die("Error: " . mysqli_error(self::$cnx));
+            throw $ex;
         }
         return self::$cnx;
     }
@@ -42,9 +40,9 @@ class core {
     
     public static function control_errors($sw = fasle){
         if($sw){
-            ini_set('display_errors', 0); 
-            ini_set('log_errors', 1); 
-            ini_set('error_log', dirname(__FILE__) . '/error_log.txt'); 
+            ini_set('display_errors', 0);
+            ini_set('log_errors', 1);
+            ini_set('error_log', dirname(__DIR__) . '/error_log.txt');
             error_reporting(E_ALL);
         }
     }

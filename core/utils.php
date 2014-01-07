@@ -32,7 +32,7 @@ function routing (){
                     $cc->$m();
                 }
             }else{
-                $cc::index();
+                $cc->index();
             }
         }
     }

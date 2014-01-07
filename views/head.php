@@ -55,7 +55,7 @@
                     <ul class="nav navbar-nav side-nav">
                         <?php
 foreach ($data['menu'] as $key => $value) {
-    echo '<li><a href="/movile/'.$value['url'].'"><i class="fa fa-pencil-square-o"></i>  '.$value['nombre'].'</a></li>';
+    echo '<li><a href="'.self::getURI().'/'.$value['url'].'"><i class="fa fa-pencil-square-o"></i>  '.$value['nombre'].'</a></li>';
 }
                         ?>
                     </ul>
@@ -91,7 +91,7 @@ foreach ($data['menu'] as $key => $value) {
                                 <li><a href="#"><i class="fa fa-user"></i> Perfil</a></li>
                                 <li><a href="#"><i class="fa fa-gear"></i> Opciones</a></li>
                                 <li class="divider"></li>
-                                <li><a href="login/logout"><i class="fa fa-power-off"></i> Salir del sistema</a></li>
+                                <li><a href="<?php echo self::getURI(); ?>/login/logout"><i class="fa fa-power-off"></i> Salir del sistema</a></li>
                             </ul>
                         </li>
                     </ul>
