@@ -1,6 +1,5 @@
 <?php
 
-
 /*
 
 ccRICK
@@ -10,6 +9,7 @@ Revison 0
 */
 
 class orm extends core{
+    
 	public static $results,$data;
 
 	public function orm($cnxo = false){

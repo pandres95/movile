@@ -25,11 +25,11 @@ function routing (){
             
             if($m != ''){
                 if($arg != ''){
-                    $cc::$m($arg);
+                    $cc->$m($arg);
                 }elseif(isset($_POST)){
-                    $cc::$m($_POST);
+                    $cc->$m($_POST);
                 }else{
-                    $cc::$m();
+                    $cc->$m();
                 }
             }else{
                 $cc::index();

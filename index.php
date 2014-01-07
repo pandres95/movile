@@ -27,6 +27,7 @@ autoLoad($libraries);
 // Config Zone
 $config = array('errors' => true,'uri'=>'http://localhost/movile');
 $app['app']::SQLConnect(array('host'=>'localhost','user'=>'shorty_your658','pass'=>'g2sdxPS2i7','db'=>'shorty_movile'));
+
 $app['app']::settings($config);
 
 // Send PHP vID to GLOBALS

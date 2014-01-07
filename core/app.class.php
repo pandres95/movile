@@ -29,6 +29,7 @@ class core {
             //self::$cnx = mysqli_connect($params['host'],$params['user'],$params['pass'],$params['db']);
             self::$cnx = mysqli_connect($params['host'],$params['user'],$params['pass'],$params['db']) or
                 die("Error: " . mysqli_error(self::$cnx));
+            self::$cnx->set_charset('utf8');
         }catch(Exception $ex){
             die("Error: " . mysqli_error(self::$cnx));
         }
