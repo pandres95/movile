@@ -1,17 +1,3 @@
-// First Chart Example - Area Line Chart
-
-
-
-Morris.Donut({
-  element: 'morris-chart-donut',
-  data: [
-    {label: "Caribe", value: 42.7},
-    {label: "Centro", value: 8.3},
-    {label: "Sur", value: 12.8},
-    {label: "Oriente", value: 36.2}
-  ],
-  formatter: function (y) { return y + "%" ;}
-});
 
 Morris.Line({
   // ID of the element in which to draw the chart.

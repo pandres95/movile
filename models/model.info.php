@@ -50,7 +50,20 @@ class infoModel extends Model{
             return json_encode(array('error'=>true));
         }
     }
+    
+    public function smsEnviadosPorMunicipio($municipio){
         
+        $sql = "SELECT count(id) as cuenta FROM sms_enviados_por_municipio WHERE municipio = '$municipio'";
+        $res = Model::query($sql);
+        
+        if(count($res) > 0){
+            return json_encode($res);
+        } else {
+            return json_encode(array('error' => true));
+        }
+        
+    }
+    
 }
 
 ?>

@@ -3,7 +3,10 @@
     <div class="row">
         <div class="col-lg-12">
             <ol class="breadcrumb">
-                <li class="active"><i class="fa fa-dashboard"></i> Tablero de Mando</li>
+                <li class="active">
+                    <i class="fa fa-dashboard"></i>
+                    Tablero de Mando
+                </li>
             </ol>
         </div>
     </div><!-- /.row -->
@@ -79,7 +82,10 @@
         <div class="col-lg-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Información Geolocalizada</h3>
+                    <h3 class="panel-title">
+                        <i class="fa fa-bar-chart-o"></i>
+                        Información Geolocalizada
+                    </h3>
                 </div>
                 <div class="panel-body">
                     <div>
@@ -106,7 +112,10 @@
         <div class="col-lg-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-clock-o"></i> Actividades Recientes</h3>
+                    <h3 class="panel-title">
+                        <i class="fa fa-clock-o"></i>
+                        Actividades Recientes
+                    </h3>
                 </div>
                 <div class="panel-body">
                     <div class="list-group">
@@ -124,11 +133,12 @@
                         </a>
                     </div>
                     <div class="text-right">
-                        
+                        Hola Mundo!
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="col-lg-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -148,7 +158,6 @@
 <!-- Page Specific Plugins -->
 <script src="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-<script src="/movile/xhtml/js/morris/chart-data-morris.js"></script>
 <script src="/movile/xhtml/js/tablesorter/jquery.tablesorter.js"></script>
 <script src="/movile/xhtml/js/tablesorter/tables.js"></script>
 <script type="text/javascript">
@@ -209,7 +218,7 @@
             
         });
         
-        var map = L.map('map').setView([10.46587,-73.25048], 13);
+        var map = L.map('map').setView([4.5,-73], 5);
         
         L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
             maxZoom: 18,
@@ -217,12 +226,27 @@
         }).addTo(map);
         
         
-        L.marker([10.46587,-73.25048]).addTo(map)
-        .bindPopup("<b>Valledupar</b><br /> 80 SMS Enviados.").openPopup();
+        var smsCuenta = JSON.parse('<?php echo $data['sms_enviados_mun']; ?>');
+        
+        for(obj in smsCuenta){
+            obj = smsCuenta[obj];
+            L.marker([obj.latitud,obj.longitud]).addTo(map)
+            .bindPopup("<b>" + obj.municipio + "</b><br />" + obj.cuenta + " SMS Enviados.").openPopup();
+        }
+        
+        var top10SMS = [
+            {label: "Caribe", value: 42.7},
+            {label: "Centro", value: 8.3},
+            {label: "Sur", value: 12.8},
+            {label: "Oriente", value: 36.2}
+        ];
+        Morris.Donut({
+            element: 'morris-chart-donut',
+            data: top10SMS,
+            formatter: function (y) { return y + "%" ;}
+        });
         
     });
     
-    
-    
-    
 </script>
+<script src="/movile/xhtml/js/morris/chart-data-morris.js"></script>

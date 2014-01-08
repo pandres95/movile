@@ -23,7 +23,7 @@ function routing (){
         if(class_exists($c)){
             $cc = new $c;
             
-            if($m != ''){
+            if($m != '' and method_exists($cc, $m)){
                 if($arg != ''){
                     $cc->$m($arg);
                 }elseif(isset($_POST)){

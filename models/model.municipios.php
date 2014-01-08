@@ -4,7 +4,7 @@ class municipiosModel extends Model{
     
     public function municipiosModel(){}
     
-    public function getMunicipiosJSON($data){
+    public function getMunicipiosJSON($data = false){
         
         $sql = '';
         

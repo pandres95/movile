@@ -8,17 +8,14 @@ class opendata extends Controller {
     }
     
     public function index($data = ''){
+        header ('Content-Type: text/plain; charset=UTF-8');
+        echo file_get_contents(self::getURI().'/xhtml/txt/info_opendata.txt');
     }
     
     public function infomunicipios($data) {
         $municipios = Controller::getModel('municipios')->getMunicipiosJSON($data);
         header('Content-Lenght: '.strlen($municipios));
         echo $municipios;
-    }
-    
-    public function encuestas($data) {
-        $encuestas = Controller::getModel('municipios')->getEncuestas($data);
-        echo $data;
     }
 
 }
