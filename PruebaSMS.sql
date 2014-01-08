@@ -2,21 +2,24 @@
 SELECT * FROM movile_encuestas;
 INSERT INTO movile_encuestas (nombre) VALUES ('Encuesta de satisfaccion de MySQL');
 SELECT * FROM movile_preguntas;
-INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (4, 'Como se siente usando MySQL Workbench?');
-INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (4, 'Que piensa del uso de MySQL Workbench?');
+INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (1, 'Como se siente usando MySQL Workbench?');
+INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (1, 'Que piensa del uso de MySQL Workbench?');
 SELECT * FROM movile_respuestas;
 
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (8, 'Excelente', 1);
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (8, 'Regular', 2);
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (8, 'Mal', 3);
+INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Excelente', 1);
+INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Regular', 2);
+INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Mal', 3);
 
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (9, 'Esta bien', 1);
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (9, 'Le faltan detalles', 2);
+INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Esta bien', 1);
+INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Le faltan detalles', 2);
 /* **************************** */
 
+INSERT INTO movile_celulares VALUES ('3014599967', '73001');
+INSERT INTO movile_celulares VALUES ('3007261215', '11001');
+
 /* Inicia una encuesta con el número asignado */
-CALL iniciar_encuesta('3014599967', 4, @res);
-CALL iniciar_encuesta('3007261215', 4, @res);
+CALL iniciar_encuesta('3014599967', 1, @res);
+CALL iniciar_encuesta('3007261215', 1, @res);
 SELECT @res AS r;
 
 /* Responde una pregunta con el numeral dado */
@@ -51,7 +54,7 @@ INSERT INTO sms_fallidos(celular, fecha) VALUES ('3014599967', CURRENT_TIMESTAMP
 
 SELECT (SELECT COUNT(id) AS cuenta FROM respuestas_usuarios LIMIT 1) + (SELECT COUNT(id) AS cuenta FROM sms_fallidos LIMIT 1) AS cuenta;
 
-INSERT INTO movile_usuarios VALUES (NULL, 'pandres95', 'Pablo Dorado', MD5('Andr3s_Loquillo'), 2, 1);
+INSERT INTO movile_usuarios VALUES (NULL, 'johasalinasq', 'Johana Salinas Q.', MD5('joahasalinasq'), 2, 1);
 
 TRUNCATE movile_menu;
 
@@ -86,3 +89,7 @@ ORDER BY id DESC;
 
 SELECT id, nombre FROM encuestas_por_ciudad WHERE municipio = '73001';
 SELECT * FROM ultimas_encuestas_agregadas;
+
+DROP VIEW sms_enviados_por_municipio;
+
+SELECT count(id) FROM sms_enviados_por_municipio WHERE municipio = '11001';
