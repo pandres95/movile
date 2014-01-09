@@ -73,16 +73,16 @@ class enviosms extends Controller{
     }
     
     public function enviarsms($token = ''){
+        
         $wsdl = Controller::$ws;
+        
         if(isset($_POST)){
             
             if(!$_POST['text']){
-                $contenido = $encuesta;
+                $contenido = '';
             }else{
                 $contenido = $_POST['text'];
             }
-            
-            
             
             if ($_FILES) {
                 $fila = 1;
@@ -96,9 +96,9 @@ class enviosms extends Controller{
                             // $data_sms[1] -> Ciudad del Movil
                             
                             $param = array(
-                                'User'			=>'developer2',
-                                'Password'		=>'d5482c85',
-                                'Message' 		=>$contenido,
+                                'User'			=> 'developer1',
+                                'Password'		=> 'acd52431',
+                                'Message' 		=> $contenido,
                                 'PhoneNumber' 	=> $data_sms[0]
                             );
                             

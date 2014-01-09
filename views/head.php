@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo self::getURI(); ?>">Movile</a>
+                <a class="navbar-brand" href="<?php echo core::getURI(); ?>">Movile</a>
             </div>
             
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,7 +56,7 @@
                 <ul class="nav navbar-nav side-nav">
                     <?php foreach ($data['menu'] as $key => $value): ?>
                     <li>
-                        <a href="<?php echo self::getURI().'/'.$value['url']; ?>">
+                        <a href="<?php echo core::getURI().'/'.$value['url']; ?>">
                             <i class="fa fa-pencil-square-o"></i>
                             <?php echo $value['nombre']; ?>
                         </a>
@@ -114,7 +114,7 @@
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="<?php echo self::getURI(); ?>/login/logout">
+                                <a href="<?php echo core::getURI(); ?>/login/logout">
                                     <i class="fa fa-power-off"></i>
                                     Salir del sistema
                                 </a>

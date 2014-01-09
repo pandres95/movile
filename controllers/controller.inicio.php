@@ -44,16 +44,18 @@ class inicio extends Controller{
             }
             $municipios = json_decode(Controller::getModel('municipios')->getMunicipiosJSON());
             $sms_enviados_mun = array();
-            foreach($municipios->municipios as $key => $value){
-                $c_sms_enviados = json_decode(Controller::getModel('info')->smsEnviadosPorMunicipio($value->codigo));
-                if(!isset($c_sms_enviados->error))
-                {
-                    if($c_sms_enviados[0]->cuenta > 0){
-                        $sms_enviados_mun[] = array("municipio" => $value->municipio,
-                                                    "longitud" => $value->longitud,
-                                                    "latitud" => $value->latitud,
-                                                    "cuenta" => (int) $c_sms_enviados[0]->cuenta
-                                                   );
+            if(!isset($municipios->error)){
+                foreach($municipios->municipios as $key => $value){
+                    $c_sms_enviados = json_decode(Controller::getModel('info')->smsEnviadosPorMunicipio($value->codigo));
+                    if(!isset($c_sms_enviados->error))
+                    {
+                        if($c_sms_enviados[0]->cuenta > 0){
+                            $sms_enviados_mun[] = array("municipio" => $value->municipio,
+                                                        "longitud" => $value->longitud,
+                                                        "latitud" => $value->latitud,
+                                                        "cuenta" => (int) $c_sms_enviados[0]->cuenta
+                                                       );
+                        }
                     }
                 }
             }
@@ -62,7 +64,7 @@ class inicio extends Controller{
             
             $Slim = Controller::$slimx;
             $u = unserialize($_SESSION['u_session']['data']);
-             
+            
             $menu = array("nombre" => $u[0]->nombre,
                           "menu" => Controller::query("SELECT * FROM movile_menu WHERE nivel like '%".$u[0]->nivel."%'")
                          );
