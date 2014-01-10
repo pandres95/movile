@@ -179,12 +179,7 @@
             .bindPopup("<b>" + obj.municipio + "</b><br />" + obj.cuenta + " SMS Enviados.");
         }
         
-        var top10SMS = [
-            {label: "Caribe", value: 42.7},
-            {label: "Centro", value: 8.3},
-            {label: "Sur", value: 12.8},
-            {label: "Oriente", value: 36.2}
-        ];
+        var top10SMS = <?php echo $data['respuestas_por_deptos']; ?>;
         
         Morris.Donut({
             element: 'morris-chart-donut',

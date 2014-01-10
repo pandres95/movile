@@ -59,7 +59,7 @@ class inicio extends Controller{
                     }
                 }
             }
-            
+            $respuestas_por_deptos = json_decode(Controller::getModel('info')->respuestasPorDepartamentos());
             /* -------------------------------------------------------- */
             
             $Slim = Controller::$slimx;
@@ -78,7 +78,8 @@ class inicio extends Controller{
                                          "correctos"=> $sms_correctos,
                                          "fallidos" => $sms_fallidos),
                           "encuestas" => $num_encuestas,
-                          "sms_enviados_mun" => json_encode($sms_enviados_mun)
+                          "sms_enviados_mun" => json_encode($sms_enviados_mun),
+                          "respuestas_por_deptos" => json_encode($respuestas_por_deptos)
                          );
             
             $Slim::getView('inicio',$data,function($route,$data){
