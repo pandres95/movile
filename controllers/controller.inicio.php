@@ -63,13 +63,8 @@ class inicio extends Controller{
             /* -------------------------------------------------------- */
             
             $Slim = Controller::$slimx;
-            $u = unserialize($_SESSION['u_session']['data']);
             
-            $menu = array("nombre" => $u[0]->nombre,
-                          "menu" => Controller::query("SELECT * FROM movile_menu WHERE nivel like '%".$u[0]->nivel."%'")
-                         );
-            
-            $Slim::getView('head',$menu,function($route,$data){
+            $Slim::getView('app/head',$menu,function($route,$data){
                 $data;
                 include $route;
             });
@@ -82,12 +77,12 @@ class inicio extends Controller{
                           "respuestas_por_deptos" => json_encode($respuestas_por_deptos)
                          );
             
-            $Slim::getView('inicio',$data,function($route,$data){
+            $Slim::getView('inicio/inicio',$data,function($route,$data){
                 $data;
                 include $route;
             });
             
-            $Slim::getView('foot',$data,function($route,$data){
+            $Slim::getView('app/foot',$data,function($route,$data){
                 $data;
                 include $route;
             });

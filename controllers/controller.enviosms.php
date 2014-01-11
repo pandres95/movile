@@ -14,25 +14,20 @@ class enviosms extends Controller{
         try{
             
             $Slim = Controller::$slimx;
-            $u = unserialize($_SESSION['u_session']['data']);
             
-            $menu = array("nombre" => $u[0]->nombre,
-                          "menu" => Controller::query("SELECT * FROM movile_menu WHERE nivel like '%".$u[0]->nivel."%'")
-                         );
-            
-            $Slim::getView('head', $menu, function($route,$data){
+            $Slim::getView('app/head', $data, function($route,$data){
                 $data;
                 include $route;
             });
             
             $encuestas = Controller::query("SELECT id, nombre FROM movile_encuestas");
             
-            $Slim::getView('enviosms', $encuestas, function($route,$data){
+            $Slim::getView('enviosms/enviosms', $encuestas, function($route,$data){
                 $data;
                 include $route;
             });
             
-            $Slim::getView('foot', $data, function($route,$data){
+            $Slim::getView('app/foot', $data, function($route,$data){
                 $data;
                 include $route;
             });
@@ -42,7 +37,7 @@ class enviosms extends Controller{
         }
         
     }
-        
+    
     public function enviarsms($token = ''){
         
         $issms = true;
