@@ -1,142 +1,94 @@
 /* Inserción de datos de prueba */
-SELECT * FROM movile_encuestas;
-INSERT INTO movile_encuestas (nombre) VALUES ('Encuesta de satisfaccion de MySQL');
 
-SELECT * FROM movile_preguntas;
-INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (1, 'Como se siente usando MySQL Workbench?');
-INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (1, 'Que piensa del uso de MySQL Workbench?');
+	SELECT * FROM movile_encuestas;
+	INSERT INTO movile_encuestas (nombre) VALUES ('Encuesta de satisfaccion de MySQL');
 
-DELETE FROM movile_respuestas;
-SELECT * FROM movile_respuestas;
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Excelente', 1);
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Regular', 2);
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Mal', 3);
+	SELECT * FROM movile_preguntas;
+	INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (1, 'Como se siente usando MySQL Workbench?');
+	INSERT INTO movile_preguntas (id_encuesta, texto) VALUES (1, 'Que piensa del uso de MySQL Workbench?');
 
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Esta bien', 1);
-INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Le faltan detalles', 2);
+	DELETE FROM movile_respuestas;
+	SELECT * FROM movile_respuestas;
+	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Excelente', 1);
+	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Regular', 2);
+	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Mal', 3);
+
+	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Esta bien', 1);
+	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Le faltan detalles', 2);
+
 /* **************************** */
 
-INSERT INTO movile_celulares VALUES ('3014599967', '73001');
-INSERT INTO movile_celulares VALUES ('3007261215', '11001');
+/* Inserción de números celulares */
 
-/* Inicia una encuesta con el número asignado */
-CALL iniciar_encuesta('3014599967', 1, @res);
-CALL iniciar_encuesta('3007261215', 1, @res);
-SELECT @res AS r;
+	SELECT * FROM movile_celulares;
+	CALL insertar_celular('3014599967','73001');
+	CALL insertar_celular('3007261215','11001');
+	CALL insertar_celular('3124712341','73001');
 
-/* Responde una pregunta con el numeral dado */
-CALL responder_pregunta('3014599967', 2, @res);
-CALL responder_pregunta('3007261215', 1, @res);
-SELECT @res as r;
+/* **************************** */
 
-/* Pregunta si hay más preguntas para responder en la encuesta activa del usuario */
-CALL hay_siguiente_pregunta('3014599967', @res);
-SELECT @res as r;
+/* Ejemplos de manejo de encuestas */
 
-/* Agrega la siguiente pregunta al usuario */
-CALL agregar_siguiente_pregunta('3014599967', @res);
-SELECT @res AS r;
+	/* Inicia una encuesta con el número asignado */
+	CALL iniciar_encuesta('3014599967', 1, @res);
+	CALL iniciar_encuesta('3007261215', 1, @res);
+	SELECT @res AS r;
 
-/* Invalida las preguntas que fueron abiertas previamente y no resueltas */
-CALL invalidar_preguntas_previas_abiertas('3007261215', @res);
-CALL invalidar_preguntas_previas_abiertas('3014599967', @res);
-SELECT @res AS r;
+	/* Responde una pregunta con el numeral dado */
+	CALL responder_pregunta('3014599967', 2, @res);
+	CALL responder_pregunta('3007261215', 1, @res);
+	SELECT @res as r;
 
-/* Consulta de tabla de respuestas */
-SELECT * FROM respuestas_usuarios;
+	/* Pregunta si hay más preguntas para responder en la encuesta activa del usuario */
+	CALL hay_siguiente_pregunta('3014599967', @res);
+	SELECT @res as r;
 
-/* Borrado de tabla de respuestas */
-TRUNCATE respuestas_usuarios;
+	/* Agrega la siguiente pregunta al usuario */
+	CALL agregar_siguiente_pregunta('3014599967', @res);
+	SELECT @res AS r;
 
-SELECT * FROM movile_menu;
-SELECT * FROM movile_usuarios;
+	/* Invalida las preguntas que fueron abiertas previamente y no resueltas */
+	CALL invalidar_preguntas_previas_abiertas('3007261215', @res);
+	CALL invalidar_preguntas_previas_abiertas('3014599967', @res);
+	SELECT @res AS r;
 
-SELECT count(id) AS cuenta FROM respuestas_usuarios LIMIT 1;
-SELECT * FROM sms_fallidos;
-INSERT INTO sms_fallidos(celular, fecha) VALUES ('3014599967', CURRENT_TIMESTAMP);
+/* **************************** */
 
-SELECT (SELECT COUNT(id) AS cuenta FROM respuestas_usuarios LIMIT 1) + (SELECT COUNT(id) AS cuenta FROM sms_fallidos LIMIT 1) AS cuenta;
+/*  Manejo de menus */
 
-INSERT INTO movile_usuarios VALUES (NULL, 'johasalinasq', 'Johana Salinas Q.', MD5('joahasalinasq'), 2, 1);
-INSERT INTO movile_usuarios VALUES (NULL, 'jspaz', 'Joan Paz', MD5('jspaz'), 2, 1);
+	SELECT * FROM movile_menu;
+	INSERT INTO movile_menu VALUES(1, 'Escritorio', '', '1,2', NULL, 'home');
+	INSERT INTO movile_menu VALUES(2, 'Envio de SMS', 'enviosms', '1,2', NULL, 'send');
+	INSERT INTO movile_menu VALUES(3, 'Encuestas', 'encuesta', '1,2', NULL, 'list-alt');
+	INSERT INTO movile_menu VALUES(4, 'Crear Encuesta', 'encuesta/nueva', '2', 3, 'plus');
 
-TRUNCATE movile_menu;
+/* **************************** */
 
-INSERT INTO movile_menu VALUES(NULL, 'Escritorio', '', '1,2');
-INSERT INTO movile_menu VALUES(NULL, 'Envio de SMS', 'enviosms', '1,2');
-INSERT INTO movile_menu VALUES(NULL, 'Encuestas', 'enviosms/encuestas', '2');
+/* Registro de SMS Fallidos */
 
-LOAD DATA LOCAL INFILE 'C:\\Users\\GOLDEN\\Downloads\\idepartamentos.csv' INTO TABLE movile_departamentos FIELDS TERMINATED BY ',';
-LOAD DATA LOCAL INFILE 'C:\\Users\\GOLDEN\\Desktop\\departamentoscolombia.csv' INTO TABLE movile_departamentos FIELDS TERMINATED BY ',';
-LOAD DATA LOCAL INFILE 'C:\\Users\\GOLDEN\\Downloads\\imunicipios.csv' INTO TABLE movile_municipios FIELDS TERMINATED BY ',';
-LOAD DATA LOCAL INFILE 'C:\\Users\\GOLDEN\\Desktop\\municipioscolombia.csv' INTO TABLE movile_municipios FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+	INSERT INTO sms_fallidos(celular) VALUES ('3014599967');
 
-SELECT * FROM movile_departamentos;
-SELECT * FROM movile_municipios LIMIT 1102;
+/* **************************** */
 
-DELETE FROM movile_departamentos;
-DELETE FROM movile_municipios;
+/* Inserción de usuarios */
 
-CREATE VIEW `encuestas_por_ciudad` AS
-SELECT e.id, e.nombre, m.id as municipio
-FROM movile_encuestas e, respuestas_usuarios r, movile_municipios m
-WHERE e.id = r.id_encuesta AND r.celular IN (
-	SELECT celular 
-	FROM movile_celulares c, movile_municipios m
-	WHERE c.municipio = m.id
-);
+	INSERT INTO movile_usuarios VALUES (NULL, 'johasalinasq', 'Johana Salinas Q.', MD5('joahasalinasq'), 2, 1);
+	INSERT INTO movile_usuarios VALUES (NULL, 'jspaz', 'Joan Paz', MD5('jspaz'), 2, 1);
 
-CREATE VIEW `ultimas_encuestas_agregadas` AS
-SELECT *
-FROM movile_encuestas
-ORDER BY id DESC;
+/* **************************** */
 
-DROP VIEW respuestas_por_departamento;
+/* Informes de encuestas */
 
-CREATE VIEW `respuestas_por_departamento` AS
-SELECT r.id, d.id as depto
-FROM respuestas_usuarios r,
-	movile_celulares c, 
-	movile_municipios m, 
-	movile_departamentos d
-WHERE r.celular = c.celular 
-	AND c.municipio = m.id 
-	AND m.departamento = d.id 
-	AND r.estado = 2;
+	SELECT * FROM ultimas_encuestas_agregadas;
+	CALL respuestas_por_departamento();
+	SELECT id, nombre FROM encuestas_por_ciudad WHERE municipio = '73001';
 
-SELECT nombre_departamento FROM movile_departamentos WHERE id = '11';
-SELECT nombre_departamento FROM movile_departamentos WHERE id = '73';
+/* **************************** */
 
-CALL respuestas_por_departamento();
+/* Informes de SMS */
 
-SELECT id, nombre FROM encuestas_por_ciudad WHERE municipio = '73001';
-SELECT * FROM ultimas_encuestas_agregadas;
+	SELECT count(celular) FROM sms_enviados_por_municipio WHERE municipio = '11001';
+	SELECT * FROM sms_enviados;
+	SELECT * FROM sms_fallidos;
 
-DROP VIEW sms_enviados_por_municipio;
-
-SELECT count(id) FROM sms_enviados_por_municipio WHERE municipio = '11001';
-
-CREATE VIEW `sms_enviados_por_municipio` AS
-SELECT r.celular, 
-	m.id as municipio 
-FROM respuestas_usuarios r, 
-	movile_celulares c, 
-	movile_municipios m
-WHERE r.celular = c.celular 
-	AND c.municipio = m.id;
-
-CREATE TABLE IF NOT EXISTS `shorty_movile`.`sms_enviados` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `celular` CHAR(10) NOT NULL,
-  `mensaje` TEXT NOT NULL,
-  `fecha` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  INDEX `fk_sms_enviados_movile_celulares1_idx` (`celular` ASC),
-  CONSTRAINT `fk_sms_enviados_movile_celulares1`
-    FOREIGN KEY (`celular`)
-    REFERENCES `shorty_movile`.`movile_celulares` (`celular`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-CALL insertar_celular('31212341','73001');
+/* **************************** */
