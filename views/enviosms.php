@@ -18,10 +18,16 @@
             
             <div class="panel-heading">
                 <div class="form-group col-xs-12">
+                    
                     <label for="sms" >
                         <input type="radio" name="send_choice" value="sms" checked> Enviar mensaje SMS
                     </label>
-                    <textarea class="form-control sms" name="sms" placeholder="Ingrese su mensaje aquí"></textarea>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                        </span>
+                        <textarea class="form-control sms" name="sms" placeholder="Ingrese su mensaje aquí"></textarea>
+                    </div>                   
                 </div>
                 <div class="col-xs-12 form-group">
                     <label for="sms" >
@@ -33,7 +39,7 @@
                         <?php foreach($data as $key => $value): ?>
                         <option value="<?php echo $value[0]; ?>"><?php echo $value[1]; ?></option>
                         <?php endforeach; ?>
-                    </select>
+                    </select> 
                 </div>
                 <div class="col-xs-12 form-group">
                     <input type="file" name="archivoPlano" class="col-xs-6 form-control" style="margin-top: 10px;">
@@ -41,9 +47,9 @@
                 <div class="col-xs-12 messages">
                 </div>
                 <div class="col-xs-12 form-group">
-                    <p>
-                        <input type="sumbit" class="btn btn-danger btn-lg enviosms pull-right" style="margin-top: 10px;" value="Enviar SMS">
-                    </p>
+                    <span class="enviosms pull-right">
+                        <input type="sumbit" class="btn btn-danger btn-lg" style="margin-top: 10px;" value="Enviar SMS">
+                    </span>
                 </div>
             </div>
             
@@ -118,7 +124,7 @@
                 processData: false,
                 //mientras enviamos el archivo
                 beforeSend: function(){
-                    message = $("<span class='before'>Iniciando la subida de números. Por favor espere...</span>");
+                    message = $("<div class='alert alert-warning alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>Iniciando la subida de números. Por favor espere...</div>");
                     showMessage(message);
                 },
                 //una vez finalizado correctamente
@@ -130,13 +136,13 @@
                         hideMessage();
                         $('#smsform')[0].reset();
                     } else {
-                        message = $("<span class='error'>Ha ocurrido un error: " + jres.error + ".</span>");
+                        message = $("<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Error</strong> " + jres.error + ".</div>");
                         showMessage(message);
                     }
                 },
                 //si ha ocurrido un error
-                error: function(){
-                    message = $("<span class='error'>Ha ocurrido un error.</span>");
+                error: function(e){
+                    message = $("<div class='alert alert-danger alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Error</strong> " + e + "</div>");
                     showMessage(message);
                 }
             });

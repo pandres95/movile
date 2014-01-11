@@ -50,6 +50,7 @@ class municipiosModel extends Model{
         }else{
             $res = array('error' => true);
         }
+        
         if(PHP_VERSION_ID < 50400){
             return pretty_json(json_encode($res), "\n", "    ");
         } else {

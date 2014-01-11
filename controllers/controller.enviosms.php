@@ -42,39 +42,7 @@ class enviosms extends Controller{
         }
         
     }
-    
-    public function encuestas($data = ''){
         
-        try{
-            
-            $Slim = Controller::$slimx;
-            $u = unserialize($_SESSION['u_session']['data']);
-            
-            $menu = array("nombre" => $u[0]->nombre,
-                          "menu" => Controller::query("SELECT * FROM movile_menu WHERE nivel like '%".$u[0]->nivel."%'")
-                         );
-            
-            $Slim::getView('head', $menu, function($route,$data){
-                $data;
-                include $route;
-            });
-            
-            $Slim::getView('formpull', $data, function($route,$data){
-                $data;
-                include $route;
-            });
-            
-            $Slim::getView('foot', $data, function($route,$data){
-                $data;
-                include $route;
-            });
-            
-        } catch (Exception $e) {
-            throw $e;
-        }
-        
-    }
-    
     public function enviarsms($token = ''){
         
         $issms = true;

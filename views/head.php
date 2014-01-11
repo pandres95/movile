@@ -14,14 +14,78 @@
         <!-- Add custom CSS here -->
         <link href="/movile/xhtml/css/sb-admin.css" rel="stylesheet">
         <link rel="stylesheet" href="/movile/xhtml/font-awesome/css/font-awesome.min.css">
-        <!--[if lte IE 8]>
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
-        <![endif]-->
         
+        <!--[if lte IE 8]>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+<![endif]-->
         <!-- jQuery javascript -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- Bootstrap core JavaScript -->
         <script src="/movile/xhtml/js/bootstrap.js"></script>
+        
+        <script>
+            $(function(){
+                
+                function buildMenu(menu) {
+                    
+                    for(item in menu){
+                        item = menu[item];
+                        
+                        var it = $("<li></li>")
+                            .attr("id", "menu" + item.id)
+                            .append(
+                                $("<a></a>")
+                                .attr("id", "li" + item.id)
+                                .attr("href", "<?= core::getURI() ?>/" + item.url)
+                                .append('<i class="glyphicon glyphicon-home"></i> ')
+                                .append(item.nombre)
+                            );
+                        
+                        if(item.parent == null){
+                            $("#menu_nav").append(it);
+                        } else {
+                                                        
+                            var pMenu = $("#li" + item.parent), pMenuC = pMenu.clone();
+                            
+                            if(!$('#menu' + item.parent).hasClass("dropdown")){
+                                $("#menu" + item.parent).addClass("dropdown")
+                                .html(
+                                    $(pMenu)
+                                    .attr("id", "li" + item.parent + "t")
+                                    .attr("href", "#")
+                                    .addClass("dropdown-toggle")
+                                    .attr("data-toggle", "dropdown")
+                                )
+                                .append(
+                                    $("<ul class='dropdown-menu'></ul>")
+                                    .append($("<li></li>")
+                                            .attr("id", "menu" + item.parent + "t")
+                                            .append(pMenuC)
+                                           )
+                                    .append(it)
+                                );
+                            } else {
+                                var x = $("#menu" + item.parent)
+                                $("ul", x).
+                                append(it);
+                            }
+                        }
+                        
+                    }
+                    
+                }
+                
+                $.ajax({
+                    url: "<?= core::getURI() ?>/app/header_items",
+                    type: "POST",
+                    success: function(data){
+                        $("#uname").html(data.nombre);
+                        buildMenu(data.menu);
+                    }
+                });
+                
+            });
+        </script>
         
         <style type="text/css">
             #map { height: 250px; }
@@ -48,15 +112,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 
-                <ul class="nav navbar-nav side-nav">
-                    <?php foreach ($data['menu'] as $key => $value): ?>
-                    <li>
-                        <a href="<?php echo core::getURI().'/'.$value['url']; ?>">
-                            <i class="fa fa-pencil-square-o"></i>
-                            <?php echo $value['nombre']; ?>
-                        </a>
-                    </li>
-                    <?php endforeach; ?>
+                <ul id="menu_nav" class="nav navbar-nav side-nav">
                 </ul>
                 
                 <ul class="nav navbar-nav navbar-right navbar-user">
@@ -91,7 +147,7 @@
                     <li class="dropdown user-dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-user"></i>
-                            <?php echo $data['nombre']; ?>
+                            <span id="uname"></span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
