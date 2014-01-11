@@ -1,0 +1,47 @@
+
+                                            UNIDAD DE ATENCIÓN Y REPARACIÓN INTEGRAL A LAS VÍCTIMAS
+                                                        SISTEMA DE ENCUESTAS MOVILE
+                                                        
+        Bienvenido a la sección de datos abiertos de Movile. Aquí obtendrá información útil sobre el estado del proyecto Movile: "La
+        Unidad Informa y escucha" de UARIV. Para acceder a la información, siga las instrucciones de este archivo.
+        
+        == INFOMUNICIPIOS ==
+        Para ingresar a la información de geolocalización de los municipios de Colombia:
+        
+            http://url.del/sitio..web..de..movile/opendata/infomunicipios
+            
+        Obtendrá como respuesta un archivo JSON de este tipo:
+        
+            {
+                "municipios": [
+                    {
+                        "codigo": "05001",
+                        "municipio": "Medell\u00edn",
+                        "departamento": "Antioquia",
+                        "longitud": -75.536112,
+                        "latitud": 6.291389
+                    },
+                ...
+            Ejemplo 2. http://url.del/sitio..web..de..movile/opendata/infomunicipios/
+                
+        Para obtener información relacionada con un departamento en específico utilice
+        
+            http://url.del/sitio..web..de..movile/opendata/infomunicipios/NUM
+        
+        Donde NUM sea el Código DANE del departamento que está consultando. Obtendrá algo parecido a lo siguiente:
+        
+        
+            {
+                "departamento": "Bogot\u00e1",
+                "municipios": [
+                    {
+                        "codigo": "11001",
+                        "municipio": "Bogot\u00e1",
+                        "longitud": -74.080833,
+                        "latitud": 4.598889
+                    }
+                ]
+            }
+            Ejemplo 2. http://url.del/sitio..web..de..movile/opendata/infomunicipios/11
+        
+        Para mayor información, consulte la página de la DANE: http://www.dane.gov.co/
