@@ -5,7 +5,8 @@ class enviosms extends Controller{
     public function enviosms(){
         if(!$_SESSION['u_session']['pase']){
             header('location: /movile/login');
-        }  
+        }
+        $this->loadModel('sms');
     }
     
     public function index($data = ''){
@@ -24,7 +25,9 @@ class enviosms extends Controller{
                 include $route;
             });
             
-            $Slim::getView('enviosms', $data, function($route,$data){
+            $encuestas = Controller::query("SELECT id, nombre FROM movile_encuestas");
+            
+            $Slim::getView('enviosms', $encuestas, function($route,$data){
                 $data;
                 include $route;
             });
@@ -74,50 +77,90 @@ class enviosms extends Controller{
     
     public function enviarsms($token = ''){
         
+        $issms = true;
         $wsdl = Controller::$ws;
+        $res = new stdClass;
         
         if(isset($_POST)){
             
             if(!$_POST['text']){
-                $contenido = '';
+                $issms = false;
+                $encuesta = $_POST['survey'];
             }else{
                 $contenido = $_POST['text'];
             }
             
-            if ($_FILES) {
+            if ($_FILES['archivoPlano']['tmp_name'] != '') {
                 $fila = 1;
                 if (($gestor = fopen($_FILES['archivoPlano']['tmp_name'], "r")) !== FALSE) {
-                    while (($datos = fgetcsv($gestor, 1000, ",")) !== FALSE) {
-                        $numero = count($datos);
-                        for ($c=0; $c < $numero; $c++) {
-                            $data_sms = explode('|', $datos[$c]);
+                    while (($datos = fgetcsv($gestor, 17, ",")) !== FALSE) {
+                        
+                        // $datos[0] -> Numero del Movil
+                        // $datos[1] -> Ciudad del Movil
+                        
+                        if($datos[0] != null && $datos[1] != null){
                             
-                            // $data_sms[0] -> Numero del Movil
-                            // $data_sms[1] -> Ciudad del Movil
+                            $celular = array("celular" => $datos[0],
+                                             "ciudad" => $datos[1]
+                                            );
                             
-                            $param = array(
-                                'User'			=> 'developer1',
-                                'Password'		=> 'acd52431',
-                                'Message' 		=> $contenido,
-                                'PhoneNumber' 	=> $data_sms[0]
-                            );
-                            
-                            $wsdl->initClient('http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl');
-                            
-                            if($data = $wsdl->execMethod('SendMessage',$param)){
-                                $status = true;
+                            try{
+                                
+                                Controller::getModel('sms')->registraCelular($celular['celular'], $celular['ciudad']);
+                                
+                                if(!$issms){
+                                    $ans = Controller::spQuery("SELECT nombre FROM movile_encuestas WHERE id = $encuesta; SELECT texto FROM movile_preguntas WHERE id_encuesta = $encuesta LIMIT 1; SELECT numeral, texto FROM movile_respuestas WHERE id_pregunta = (SELECT id FROM movile_preguntas WHERE id_encuesta = $encuesta LIMIT 1);");
+                                    
+                                    $contenido = $ans[0][0][0] . "\n" .
+                                        $ans[1][0][0] . "\n\n";
+                                    
+                                    foreach($ans[2] as $key => $val){
+                                        $contenido .= $val[0] . ". " . $val[1] . ".\n";
+                                    }
+                                }
+                                
+                                $param = array(
+                                    'User'			=> 'developer1',
+                                    'Password'		=> 'acd52431',
+                                    'Message' 		=> $contenido,
+                                    'PhoneNumber' 	=> $celular['celular']
+                                );
+                                
+                                $wsdl->initClient('http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl');
+                                
+                                if($data = $wsdl->execMethod('SendMessage', $param)){
+                                    $res = $data;
+                                }
+                                
+                                if($issms){
+                                    Controller::getModel('sms')->registraSMS($celular['celular'], $contenido);
+                                } else {
+                                    Controller::getModel('sms')->iniciaEncuesta($celular['celular'], $encuesta);
+                                }
+                                
+                                $res->status = true;
+                                
+                            } catch(Exception $ex) {
+                                Controller::getModel('sms')->fallaSMS($celular['celular']);
+                                $res->status = false;
+                                $res->error = $ex->getMessage();
                             }
+                            
                         }
                     }
                     fclose($gestor);
                 }
+            } else {
+                $res->status = false;
+                $res->error = "No se ha encontrado el archivo";
             }
             
-            if ($status) {
-                echo json_encode($data);
-            }
-            
+        } else {
+            $res->status = false;
+            $res->error = "No se han hallado datos";
         }
+        
+        echo json_encode($res);
         
     }
     

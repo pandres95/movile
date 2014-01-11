@@ -14,9 +14,6 @@
         <!-- Add custom CSS here -->
         <link href="/movile/xhtml/css/sb-admin.css" rel="stylesheet">
         <link rel="stylesheet" href="/movile/xhtml/font-awesome/css/font-awesome.min.css">
-        <!-- Page Specific CSS -->
-        <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
         <![endif]-->
@@ -25,8 +22,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- Bootstrap core JavaScript -->
         <script src="/movile/xhtml/js/bootstrap.js"></script>
-        <!-- Page Specific Plugins -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
         
         <style type="text/css">
             #map { height: 250px; }

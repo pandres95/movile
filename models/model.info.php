@@ -2,9 +2,7 @@
 
 class infoModel extends Model{
     
-    public function infoModel(){
-        
-    }
+    public function infoModel(){}
     
     public function numeroEncuestas(){
         
@@ -19,7 +17,7 @@ class infoModel extends Model{
     }
     
     public function smsCorrectos(){
-        $sql = "SELECT COUNT(id) AS cuenta FROM respuestas_usuarios;";
+        $sql = "SELECT (SELECT COUNT(id) AS cuenta FROM respuestas_usuarios LIMIT 1) + (SELECT COUNT(id) AS cuenta FROM sms_enviados LIMIT 1) AS cuenta;";
         $validate = Model::query($sql);
         
         if(count($validate) > 0){
@@ -41,7 +39,7 @@ class infoModel extends Model{
     }
     
     public function smsTotales(){
-        $sql = "SELECT (SELECT COUNT(id) AS cuenta FROM respuestas_usuarios LIMIT 1) + (SELECT COUNT(id) AS cuenta FROM sms_fallidos LIMIT 1) AS cuenta";
+        $sql = "SELECT (SELECT COUNT(id) AS cuenta FROM respuestas_usuarios LIMIT 1) + (SELECT COUNT(id) AS cuenta FROM sms_enviados LIMIT 1) + (SELECT COUNT(id) AS cuenta FROM sms_fallidos LIMIT 1) AS cuenta";
         $validate = Model::query($sql);
         
         if(count($validate) > 0){

@@ -2,7 +2,7 @@
     
     <div class="row">
         <div class="col-lg-12">
-            <h1>Envio de SMS <small>Masivos.</small></h1>
+            <h1>Envio de SMS</h1>
             <ol class="breadcrumb">
                 <li class="active">
                     <i class="fa fa-dashboard"></i>
@@ -14,32 +14,35 @@
     
     <div class="row">
         
-        <form enctype="multipart/form-data" name="smsform" role="form" class="form-horizontal panel panel-info">
+        <form id="smsform" name="smsform" class="form-horizontal panel panel-info">
             
             <div class="panel-heading">
                 <div class="form-group col-xs-12">
                     <label for="sms" >
-                        <input type="radio" name="send_choice" id="choose1" value="sms" checked> Enviar mensaje SMS
+                        <input type="radio" name="send_choice" value="sms" checked> Enviar mensaje SMS
                     </label>
                     <textarea class="form-control sms" name="sms" placeholder="Ingrese su mensaje aquí"></textarea>
                 </div>
                 <div class="col-xs-12 form-group">
                     <label for="sms" >
-                        <input type="radio" name="send_choice" id="choose1" value="sms" > Enviar encuesta
+                        <input type="radio" name="send_choice" value="survey" > Enviar encuesta
                     </label>
-                    <select class="form-control" style="margin-top: 10px;" disabled>
+                    <select id="survey" name="survey" class="form-control survey" style="margin-top: 10px;" disabled>
                         <option disabled selected>Escoger Encuesta</option>
                         <option disabled>-------------------------------</option>
+                        <?php foreach($data as $key => $value): ?>
+                        <option value="<?php echo $value[0]; ?>"><?php echo $value[1]; ?></option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
                 <div class="col-xs-12 form-group">
                     <input type="file" name="archivoPlano" class="col-xs-6 form-control" style="margin-top: 10px;">
                 </div>
+                <div class="col-xs-12 messages">
+                </div>
                 <div class="col-xs-12 form-group">
                     <p>
-                        <button class="btn btn-danger btn-lg enviosms pull-right" style="margin-top: 10px;">
-                            Enviar SMS
-                        </button>
+                        <input type="sumbit" class="btn btn-danger btn-lg enviosms pull-right" style="margin-top: 10px;" value="Enviar SMS">
                     </p>
                 </div>
             </div>
@@ -50,27 +53,60 @@
     
 </div><!-- /#page-wrapper -->
 
-
 <script>
     
     $(function() {
         
-        $('.enviosms').on('click', function(){
+        var choice = 'sms', sur = 1;
+        
+        $('input[name="send_choice"]').on('click', function() {
+            var x = $(this);
+            choice = x.attr('value');
+            switch(choice){
+                case 'sms':
+                    $('textarea[name="sms"]').prop("disabled", false);
+                    $('select[name="survey"]').prop("disabled", true);
+                    break;
+                case 'survey':
+                    $('textarea[name="sms"]').prop("disabled", true);
+                    $('select[name="survey"]').prop("disabled", false);
+                    break;
+                default:
+                    break;
+            }
+        });
+        
+        $('.enviosms').on('click', function(event){
             
-            var $data = new FormData($('form[name=smsform]')[0]);
-            $data.append('text',$('.sms').val());
+            function showMessage(message){
+                $(".messages").html("").show().html(message);
+            }
+            
+            function hideMessage() {
+                $(".messages").html("").hide();
+            }
+            
+            
+            var $data = new FormData($('form[name=smsform]')[0]);         
+            if(choice === 'sms'){
+                $data.append('text', $('.sms').val());
+            } else {
+                if($('#survey option:selected').val() == null){
+                    message = $("<span class='error'>Por favor seleccione una encuesta.</span>");
+                    showMessage(message);
+                    return;
+                } else {
+                    $data.append('survey', $('#survey option:selected').val());
+                }
+            }
             
             console.log($data);
             
             var btn = $(this);
-            btn.attr('disabled','disabled');
-            
-            function showMessage(message){
-                $(".messages").html("").show();
-                $(".messages").html(message);
-            }
+            btn.prop('disabled', true);
             
             $.ajax({
+                
                 url: '/movile/enviosms/enviarsms',
                 type: 'POST',
                 // Form data
@@ -88,11 +124,15 @@
                 //una vez finalizado correctamente
                 success: function(data){
                     var jres = JSON.parse(data);
+                    btn.prop('disabled', false);
                     if(jres.status){
-                        console.log('Yeahhhh!!!');
-                        btn.removeAttr('disabled');
+                        console.log(jres);
+                        hideMessage();
+                        $('#smsform')[0].reset();
+                    } else {
+                        message = $("<span class='error'>Ha ocurrido un error: " + jres.error + ".</span>");
+                        showMessage(message);
                     }
-                    
                 },
                 //si ha ocurrido un error
                 error: function(){

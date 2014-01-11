@@ -100,7 +100,7 @@
         <div class="col-lg-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Envio segun regiones</h3>
+                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Respuestas segun regiones</h3>
                 </div>
                 <div class="panel-body">
                     <div id="morris-chart-donut"></div>
@@ -133,7 +133,6 @@
                         </a>
                     </div>
                     <div class="text-right">
-                        Hola Mundo!
                     </div>
                 </div>
             </div>
@@ -155,6 +154,11 @@
     </div><!-- /.row -->
 </div><!-- /#page-wrapper -->
 
+<!-- Page Specific CSS -->
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+<!--<script src="/movile/xhtml/js/morris/chart-data-morris.js"></script>-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <!-- Page Specific Plugins -->
 <script src="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
@@ -190,4 +194,5 @@
     });
     
 </script>
-<script src="/movile/xhtml/js/morris/chart-data-morris.js"></script>
+
+        
