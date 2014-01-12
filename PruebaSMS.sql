@@ -9,12 +9,12 @@
 
 	DELETE FROM movile_respuestas;
 	SELECT * FROM movile_respuestas;
-	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Excelente', 1);
-	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Regular', 2);
-	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (1, 'Mal', 3);
+	INSERT INTO movile_respuestas (id, id_pregunta, texto, numeral) VALUES (1, 1, 'Excelente', 1);
+	INSERT INTO movile_respuestas (id, id_pregunta, texto, numeral) VALUES (2, 1, 'Regular', 2);
+	INSERT INTO movile_respuestas (id, id_pregunta, texto, numeral) VALUES (3, 1, 'Mal', 3);
 
-	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Esta bien', 1);
-	INSERT INTO movile_respuestas (id_pregunta, texto, numeral) VALUES (2, 'Le faltan detalles', 2);
+	INSERT INTO movile_respuestas (id, id_pregunta, texto, numeral) VALUES (4, 2, 'Esta bien', 1);
+	INSERT INTO movile_respuestas (id, id_pregunta, texto, numeral) VALUES (5, 2, 'Le faltan detalles', 2);
 
 /* **************************** */
 
