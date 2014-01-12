@@ -40,20 +40,21 @@ class orm extends core{
         
         $datainf = null;
         $sql = $sql_data;
-        self::$results = $data = mysqli_multi_query(self::$cnx, $sql) or die("Error: " . mysqli_error(self::$cnx) . ": " .  mysqli_errno(self::$cnx) . "<br/>" . $sql_data);
         
-        if($data){
+        self::$results = $query = self::$cnx->multi_query($sql);
+        
+        if($query){
+            
             do{
-                
-                $tres = array();
-                if($result = mysqli_use_result(self::$cnx)){
+                if($result = self::$cnx->use_result()){
+                    $tres = array();
                     while($rpt = mysqli_fetch_array($result)){
                         $tres[] = $rpt;
                     }
+                    $datainf[] = $tres;
+                    $result->close();
                 }
-                mysqli_free_result($result);
-                $datainf[] = $tres;
-            } while(mysqli_next_result(self::$cnx));
+            } while(self::$cnx->more_results() and self::$cnx->next_result());
             
             self::$data = $datainf;
             return $datainf;

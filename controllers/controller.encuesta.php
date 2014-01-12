@@ -11,7 +11,9 @@ class encuesta extends Controller {
             
             $Slim = Controller::$slimx;
             
-            $data = array("num" => Controller::query("SELECT COUNT(id) AS cuenta FROM movile_encuestas;")[0]['cuenta'],
+            $aRes = Controller::query("SELECT COUNT(id) AS cuenta FROM movile_encuestas;");
+            
+            $data = array("num" => $aRes[0]['cuenta'],
                           "encuestas" => Controller::query("SELECT id, nombre FROM movile_encuestas")
                          );
             
@@ -73,7 +75,7 @@ class encuesta extends Controller {
         
         $aRes = Controller::spQuery("SELECT nombre FROM movile_encuestas WHERE id=$data; SELECT id, texto FROM movile_preguntas WHERE id_encuesta=$data;");
         
-        $respuestas = array();        
+        $respuestas = array();
         foreach($aRes[1] as $key => $val){
             $id = $val['id'];
             $tRes = Controller::query("SELECT texto FROM movile_respuestas WHERE id_pregunta=$id");

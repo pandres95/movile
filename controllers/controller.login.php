@@ -16,7 +16,7 @@ class login extends Controller{
         
         $Slim = Controller::$slimx;
         
-        $Slim::getView('login',function($route){
+        $Slim::getView('login/login',function($route){
             include $route;
         });
         

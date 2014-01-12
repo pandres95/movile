@@ -64,7 +64,7 @@ class inicio extends Controller{
             
             $Slim = Controller::$slimx;
             
-            $Slim::getView('app/head',$menu,function($route,$data){
+            $Slim::getView('app/head',$data,function($route,$data){
                 $data;
                 include $route;
             });

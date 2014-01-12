@@ -96,7 +96,12 @@ class infoModel extends Model{
                 }
             }
         } else {
-            $a = array('error' => true);
+            if(core::$cnx->error === ''){
+                $a[] = array("label" => "No hay datos disponibles", "value" => 100.0);
+            } else{
+                $a = array('error' => true, 'errdesc' => core::$cnx->error);
+            }
+            
         }
         
         return json_encode($a);
