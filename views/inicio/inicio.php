@@ -61,20 +61,21 @@
             </div>
         </div>
         <div class="col-lg-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <i class="fa fa-book fa-5x"></i>
+            <a href="<?= core::getURI() ?>/encuesta">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <i class="fa fa-book fa-5x"></i>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <p class="announcement-heading"><?php echo $data['encuestas'] ?></p>
+                                <p class="announcement-text">Encuestas</p>
+                            </div>
                         </div>
-                        <div class="col-xs-6 text-right">
-                            <p class="announcement-heading"><?php echo $data['encuestas'] ?></p>
-                            <p class="announcement-text">Encuestas</p>
-                        </div>
-                    </div>
+                    </div>    
                 </div>
-                
-            </div>
+            </a>
         </div>
     </div><!-- /.row -->
     
@@ -195,4 +196,3 @@
     
 </script>
 
-        

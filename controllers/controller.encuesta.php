@@ -12,7 +12,7 @@ class encuesta extends Controller {
             $Slim = Controller::$slimx;
             
             $data = array("num" => Controller::query("SELECT COUNT(id) AS cuenta FROM movile_encuestas;")[0]['cuenta'],
-                         "encuestas" => Controller::query("SELECT id, nombre FROM movile_encuestas")
+                          "encuestas" => Controller::query("SELECT id, nombre FROM movile_encuestas")
                          );
             
             $Slim::getView('app/head', $data, function($route,$data){
@@ -60,6 +60,44 @@ class encuesta extends Controller {
         } catch (Exception $e) {
             throw $e;
         }
+        
+    }
+    
+    public function detalle($data = null) {
+        
+        if(!isset($data) or $data == null){
+            header('location: ' . core::getURI() . '/encuesta');
+        }
+        
+        $Slim = Controller::$slimx;
+        
+        $aRes = Controller::spQuery("SELECT nombre FROM movile_encuestas WHERE id=$data; SELECT id, texto FROM movile_preguntas WHERE id_encuesta=$data;");
+        
+        $respuestas = array();        
+        foreach($aRes[1] as $key => $val){
+            $id = $val['id'];
+            $tRes = Controller::query("SELECT texto FROM movile_respuestas WHERE id_pregunta=$id");
+            $respuestas[] = $tRes;
+        }
+        
+        $data = array("nombre" => $aRes[0][0]['nombre'],
+                     "preguntas" => $aRes[1],
+                     "respuestas" => $respuestas);
+        
+        $Slim::getView('app/head', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+        
+        $Slim::getView('encuesta/detalle', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+        
+        $Slim::getView('app/foot', $data, function($route,$data){
+            $data;
+            include $route;
+        });
         
     }
     

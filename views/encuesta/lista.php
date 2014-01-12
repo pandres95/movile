@@ -42,7 +42,7 @@
                     </td>
                     <td>
                         <a href="<?= core::getURI() ?>/encuesta/detalle/<?= $val['id'] ?>">
-                            <i class="glyphicon glyphicon-edit"></i>
+                            <i class="fa fa-cogs"></i>
                         </a>
                     </td>
                 </tr>
