@@ -42,7 +42,7 @@
                     </td>
                     <td>
                         <a href="<?= core::getURI() ?>/encuesta/detalle/<?= $val['id'] ?>">
-                            <i class="fa fa-cogs"></i>
+                            <i class="fa fa-bar-chart-o"></i>
                         </a>
                     </td>
                 </tr>
