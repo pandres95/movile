@@ -38,8 +38,10 @@ class encuesta extends Controller {
     
     public function pagLista($pagenum = ''){
         
+        $filtro = '';
+        
         if(isset($_GET['filtro'])){
-            $filter = "WHERE " . $_GET['filtro'] . " LIKE '%" . $_GET['valor'] . "%'";
+            $filtro = "WHERE " . $_GET['filtro'] . " LIKE '%" . $_GET['valor'] . "%'";
         }
         
         if (!(isset($pagenum))){
@@ -58,13 +60,17 @@ class encuesta extends Controller {
         } 
         
         $limit = 'LIMIT ' . (10 * ((int)$pagenum - 1)) . ', 10';
-        $data = array("encuestas" => Controller::query("SELECT * FROM movile_encuestas $filter $limit;"));
+        $data = array("num_paginas" => $last,
+                      "encuestas" => Controller::query("SELECT * FROM movile_encuestas $filtro $limit;")
+                     );
         
-        $Slim = Controller::$slimx;
-        $Slim::getView('encuesta/pagLista', $data, function($route,$data){
-            $data;
-            include $route;
-        });
+        if(PHP_VERSION_ID < 50400){
+            $res = pretty_json(json_encode($data), "\n", "    ");
+        } else {
+            $res = json_encode($data, JSON_PRETTY_PRINT);
+        }
+        
+        echo $res;
         
     }
     

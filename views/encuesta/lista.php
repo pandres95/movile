@@ -29,7 +29,22 @@
         </form>
     </div>
     
-    <div id="resTable" class="row">
+    <div class="row">
+        <table id="resTable" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
     
     <div class="row" style="text-align: center;">
@@ -43,29 +58,83 @@
     
     $(function() {
         
-        function reloadFiltered() {
-            localStorage.setItem('valor', $('input[name=searchval]').val());
-            $( "#resTable" ).load( "<?= core::getURI() ?>/encuesta/pagLista&filtro=nombre&valor=" + localStorage.getItem('valor')); 
-            var options = {
-                currentPage: 3,
-                totalPages: 10,
-                size:'normal',
-                alignment:'center'
-            };
+        function reload(e, originalevent, type, page) {
+            
+            var filterval = $('input[name=searchval]').val()
+            var filter = '';
+            
+            if(filterval != ''){
+                filter = "&filtro=nombre&valor=" + filterval;
+            }
+            
+            var $url = "<?= core::getURI() ?>/encuesta/pagLista/" + page + filter;
+            
+            $.ajax({
+                url: $url,
+                type: 'POST',
+                dataType: 'json',
+                success: function(data) {
+                    
+                    $('#resTable tbody').html("");
+                    
+                    var encuestas = data.encuestas;
+                    
+                    for(item in encuestas){
+                        
+                        item = encuestas[item];
+                        var detUrl = "<?= core::getURI() ?>/encuesta/detalle/" + item.id;
+                        
+                        $('#resTable tbody')
+                        .append(
+                            $("<tr></tr>")
+                            .append(
+                                $("<td></td>")
+                                .html(item.id)
+                            )
+                            .append(
+                                $("<td></td>")
+                                .html(item.nombre)
+                            )
+                            .append(
+                                $("<td></td>")
+                                .append(
+                                    $("<a></a>")
+                                    .append(
+                                        $("<span></span>")
+                                        .addClass('fa fa-bar-chart-o')
+                                    )
+                                    .attr('href', detUrl)
+                                )
+                            )
+                        );
+                        
+                    }
+                    
+                    
+                    var options = {
+                        totalPages : data.num_paginas
+                    };
+                    $('#paginator').bootstrapPaginator(options);
+                    
+                }
+            });
+            
+            
+            
         }
         
-        $('#btnSearch').click(reloadFiltered);
-        
-        localStorage.clear();
-        $( "#resTable" ).load( "<?= core::getURI() ?>/encuesta/pagLista");
+        $('#btnSearch').click(reload);
         
         var options = {
-            currentPage: 3,
-            totalPages: 10,
+            currentPage: 1,
+            //totalPages: 10,
             size:'normal',
-            alignment:'center'
+            alignment:'center',
+            onPageClicked: reload
         };
         $('#paginator').bootstrapPaginator(options);
+        
+        reload();
         
     });
     
