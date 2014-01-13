@@ -21,6 +21,7 @@
     </div><!-- /.row -->
     
     <div class="row" style="margin-bottom: +1vw;" >
+        <a class="btn btn-info" href="<?= core::getURI() ?>/encuesta/nueva" >Crear encuesta</a>
         <form class="pull-right form-inline" role="form">
             <div class="form-group">
                 <input name="searchval" class="form-control" type="text" placeholder="Filtrar por nombre">
@@ -116,6 +117,7 @@
                     };
                     $('#paginator').bootstrapPaginator(options);
                     
+
                 }
             });
             

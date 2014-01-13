@@ -120,38 +120,20 @@
                 </div>
                 <div class="panel-body">
                     <div class="list-group">
-                        <a href="#" class="list-group-item">
+                        <?php foreach($data['ultimas_encuestas'] as $k => $v): ?>
+                        <a href="<?= core::getURI() ?>/encuesta/detalle/<?= $v['id'] ?>" class="list-group-item">
                             <span class="badge"></span>
-                            <i class="fa fa-calendar"></i> 
+                            <i class="fa fa-list-alt"></i>
+                            <?= $v['nombre'] ?>
                         </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge"></span>
-                            <i class="fa fa-comment"></i> 
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="badge"></span>
-                            <i class="fa fa-truck"></i> 
-                        </a>
+                        <?php endforeach; ?>
                     </div>
                     <div class="text-right">
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="col-lg-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-money"></i> Ultimas encuestas</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="table-responsive">
-                    </div>
-                    <div class="text-right">
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div><!-- /.row -->
 </div><!-- /#page-wrapper -->
 

@@ -60,6 +60,7 @@ class inicio extends Controller{
                 }
             }
             $respuestas_por_deptos = json_decode(Controller::getModel('info')->respuestasPorDepartamentos());
+            $ultimas_encuestas = Controller::query("SELECT id, nombre FROM movile_encuestas ORDER BY id DESC LIMIT 5;");
             /* -------------------------------------------------------- */
             
             $Slim = Controller::$slimx;
@@ -74,7 +75,8 @@ class inicio extends Controller{
                                          "fallidos" => $sms_fallidos),
                           "encuestas" => $num_encuestas,
                           "sms_enviados_mun" => json_encode($sms_enviados_mun),
-                          "respuestas_por_deptos" => json_encode($respuestas_por_deptos)
+                          "respuestas_por_deptos" => json_encode($respuestas_por_deptos),
+                          "ultimas_encuestas" => $ultimas_encuestas
                          );
             
             $Slim::getView('inicio/inicio',$data,function($route,$data){

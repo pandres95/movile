@@ -121,33 +121,7 @@
                 </ul>
                 
                 <ul class="nav navbar-nav navbar-right navbar-user">
-                    
-                    <li class="dropdown messages-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope"></i>
-                            Mensajes
-                            <span id="new_messages_number" class="badge"></span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">7 Mensajes Nuevos</li>
-                            <li class="message-preview unread">
-                                <a href="#">
-                                    <span class="name">Andrea Ramirez:</span>
-                                    <span class="message">Hola, te recuerdo el envio de las encuestas...</span>
-                                    <span class="time">
-                                        <i class="fa fa-clock-o"></i>
-                                        4:34 PM
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">Bandeja de Mensajes <span class="badge">7</span></a>
-                            </li>
-                        </ul>
-                        
-                    </li>
+
                     
                     <li class="dropdown user-dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -156,19 +130,6 @@
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-user"></i> 
-                                    Perfil
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-gear"></i>
-                                    Opciones
-                                </a>
-                            </li>
-                            <li class="divider"></li>
                             <li>
                                 <a href="<?php echo core::getURI(); ?>/login/logout">
                                     <i class="fa fa-power-off"></i>
