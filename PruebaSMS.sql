@@ -37,6 +37,7 @@
 	/* Responde una pregunta con el numeral dado */
 	CALL responder_pregunta('3014599967', 2, @res);
 	CALL responder_pregunta('3007261215', 1, @res);
+	CALL responder_pregunta('3105851432', 3, @res);
 	SELECT @res as r;
 
 	/* Pregunta si hay más preguntas para responder en la encuesta activa del usuario */
@@ -61,6 +62,8 @@
 	INSERT INTO movile_menu VALUES(2, 'Envio de SMS', 'enviosms', '1,2', NULL, 'send');
 	INSERT INTO movile_menu VALUES(3, 'Encuestas', 'encuesta', '1,2', NULL, 'list-alt');
 	INSERT INTO movile_menu VALUES(4, 'Crear Encuesta', 'encuesta/nueva', '2', 3, 'plus');
+	INSERT INTO movile_menu VALUES(5, 'Informes', 'informe', '1,2', NULL, 'book');
+	INSERT INTO movile_menu VALUES(6, 'SMS Enviados', 'informe/sms_enviados', '1,2', NULL, 'book');
 
 /* **************************** */
 
@@ -72,6 +75,7 @@
 
 /* Inserción de usuarios */
 
+	SELECT * FROM movile_usuarios;
 	INSERT INTO movile_usuarios VALUES (NULL, 'johasalinasq', 'Johana Salinas Q.', MD5('joahasalinasq'), 2, 1);
 	INSERT INTO movile_usuarios VALUES (NULL, 'jspaz', 'Joan Paz', MD5('jspaz'), 2, 1);
 
@@ -92,3 +96,8 @@
 	SELECT * FROM sms_fallidos;
 
 /* **************************** */
+
+CALL respuestas_por_departamento();
+
+SELECT * FROM respuestas_usuarios;
+SELECT * FROM respuestas_por_departamento;
