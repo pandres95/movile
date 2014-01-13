@@ -26,8 +26,6 @@ function routing (){
             if($m != '' and method_exists($cc, $m)){
                 if($arg != ''){
                     $cc->$m($arg);
-                }elseif(isset($_POST)){
-                    $cc->$m($_POST);
                 }else{
                     $cc->$m();
                 }

@@ -9,19 +9,18 @@
         <title>Panel de Control - SMS Managment</title>
         
         <!-- Bootstrap core CSS -->
-        <link href="/movile/xhtml/css/bootstrap.css" rel="stylesheet">
+        <link href="/movile/xhtml/css/bootstrap.min.css" rel="stylesheet">
         
         <!-- Add custom CSS here -->
+        <link href="/movile/xhtml/css/main.css" rel="stylesheet">
         <link href="/movile/xhtml/css/sb-admin.css" rel="stylesheet">
         <link rel="stylesheet" href="/movile/xhtml/font-awesome/css/font-awesome.min.css">
-        
-        <!--[if lte IE 8]>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
-<![endif]-->
+    
         <!-- jQuery javascript -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- Bootstrap core JavaScript -->
-        <script src="/movile/xhtml/js/bootstrap.js"></script>
+        <script src="/movile/xhtml/js/vendor/bootstrap.js"></script>
+        <script src="/movile/xhtml/js/paginator/bootstrap-paginator.js" ></script>
         
         <script>
             $(function(){
