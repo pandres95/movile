@@ -36,6 +36,7 @@ function routing (){
     }
 }
 
+
 /* Object Factory */
 function autoLoad($list){
     GLOBAL $app, $orm;
@@ -143,52 +144,52 @@ function pretty_json($json, $ret= "\n", $ind="\t") {
         switch ($json[$i])
         {
             case '"':                               
-                $quote_state = !$quote_state;                                                           
-                break;
+            $quote_state = !$quote_state;
+            break;
 
             case '[':                                                           
-                $level++;               
-                break;
+            $level++;
+            break;
 
             case ']':
-                $level--;                   
-                $pre = $ret;
-                $pre .= str_repeat($ind, $level);       
-                break;
+            $level--;
+            $pre = $ret;
+            $pre .= str_repeat($ind, $level);
+            break;
 
             case '{':
 
-                if ($i - 1 >= 0 && $json[$i - 1] != ',')
-                {
-                    $pre = $ret;
-                    $pre .= str_repeat($ind, $level);                       
-                }   
+            if ($i - 1 >= 0 && $json[$i - 1] != ',')
+            {
+                $pre = $ret;
+                $pre .= str_repeat($ind, $level);
+            }
 
-                $level++;   
-                $suf = $ret;                                                                                                                        
-                $suf .= str_repeat($ind, $level);                                                                                                   
-                break;
+            $level++;
+            $suf = $ret;
+            $suf .= str_repeat($ind, $level);
+            break;
 
             case ':':
-                $suf = ' ';
-                break;
+            $suf = ' ';
+            break;
 
             case ',':
 
-                if (!$quote_state)
-                {  
-                    $suf = $ret;                                                                                                
-                    $suf .= str_repeat($ind, $level);
-                }
-                break;
+            if (!$quote_state)
+            {
+                $suf = $ret;
+                $suf .= str_repeat($ind, $level);
+            }
+            break;
 
             case '}':
-                $level--;   
+            $level--;
 
             case ']':
-                $pre = $ret;
-                $pre .= str_repeat($ind, $level);
-                break;
+            $pre = $ret;
+            $pre .= str_repeat($ind, $level);
+            break;
 
         }
 

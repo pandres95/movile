@@ -1,11 +1,24 @@
-[13-Jan-2014 06:08:49 UTC] PHP Notice:  Undefined index: info in C:\wamp\www\movile\core\controller.class.php on line 24
-[13-Jan-2014 06:08:49 UTC] PHP Stack trace:
-[13-Jan-2014 06:08:49 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
-[13-Jan-2014 06:08:49 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
-[13-Jan-2014 06:08:49 UTC] PHP   3. informe->index() C:\wamp\www\movile\core\utils.php:33
-[13-Jan-2014 06:08:49 UTC] PHP   4. Controller::getModel() C:\wamp\www\movile\controllers\controller.informe.php:12
-[13-Jan-2014 06:08:49 UTC] PHP Fatal error:  Call to a member function smsTotales() on a non-object in C:\wamp\www\movile\controllers\controller.informe.php on line 12
-[13-Jan-2014 06:08:49 UTC] PHP Stack trace:
-[13-Jan-2014 06:08:49 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
-[13-Jan-2014 06:08:49 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
-[13-Jan-2014 06:08:49 UTC] PHP   3. informe->index() C:\wamp\www\movile\core\utils.php:33
+[13-Jan-2014 06:46:31 UTC] PHP Notice:  Undefined variable: limit in C:\wamp\www\movile\models\model.sms.php on line 59
+[13-Jan-2014 06:46:31 UTC] PHP Stack trace:
+[13-Jan-2014 06:46:31 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 06:46:31 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 06:46:31 UTC] PHP   3. informe->p_smsEnviados() C:\wamp\www\movile\core\utils.php:30
+[13-Jan-2014 06:46:31 UTC] PHP   4. smsModel->smsEnviados() C:\wamp\www\movile\controllers\controller.informe.php:61
+[13-Jan-2014 06:54:44 UTC] PHP Notice:  Undefined variable: limit in C:\wamp\www\movile\models\model.sms.php on line 59
+[13-Jan-2014 06:54:44 UTC] PHP Stack trace:
+[13-Jan-2014 06:54:44 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 06:54:44 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 06:54:44 UTC] PHP   3. informe->p_smsEnviados() C:\wamp\www\movile\core\utils.php:28
+[13-Jan-2014 06:54:44 UTC] PHP   4. smsModel->smsEnviados() C:\wamp\www\movile\controllers\controller.informe.php:61
+[13-Jan-2014 06:55:15 UTC] PHP Notice:  Undefined variable: limit in C:\wamp\www\movile\models\model.sms.php on line 59
+[13-Jan-2014 06:55:15 UTC] PHP Stack trace:
+[13-Jan-2014 06:55:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 06:55:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 06:55:15 UTC] PHP   3. informe->p_smsEnviados() C:\wamp\www\movile\core\utils.php:28
+[13-Jan-2014 06:55:15 UTC] PHP   4. smsModel->smsEnviados() C:\wamp\www\movile\controllers\controller.informe.php:61
+[13-Jan-2014 06:55:17 UTC] PHP Notice:  Undefined variable: limit in C:\wamp\www\movile\models\model.sms.php on line 59
+[13-Jan-2014 06:55:17 UTC] PHP Stack trace:
+[13-Jan-2014 06:55:17 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 06:55:17 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 06:55:17 UTC] PHP   3. informe->p_smsEnviados() C:\wamp\www\movile\core\utils.php:28
+[13-Jan-2014 06:55:17 UTC] PHP   4. smsModel->smsEnviados() C:\wamp\www\movile\controllers\controller.informe.php:61

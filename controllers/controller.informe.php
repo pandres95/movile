@@ -4,6 +4,7 @@ class informe extends Controller {
 
     public function informe () {
         $this->loadModel('info');
+        $this->loadModel('sms');
     }
 
 
@@ -43,6 +44,43 @@ class informe extends Controller {
                                     ));
 
         $Slim::getView('informe/inicio', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+
+        $Slim::getView('app/foot', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+
+    }
+
+    public function p_smsEnviados($pagenum = ''){
+
+        header('Content-Type: application/json; charset=UTF-8');
+        echo Controller::getModel('sms')->smsEnviados($pagenum);
+
+    }
+
+    public function sms_enviados ($data = ''){
+
+        $Slim = Controller::$slimx;
+
+        $sms_enviados = json_decode(Controller::getModel('info')->smsTotales());
+        if(!isset($sms_enviados->error)){
+            $sms_enviados = $sms_enviados[0]->cuenta;
+        }else {
+            $sms_enviados = 0;
+        }
+
+        $Slim::getView('app/head', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+
+        $data = array("num" => $sms_enviados);
+
+        $Slim::getView('informe/smsEnviados', $data, function($route,$data){
             $data;
             include $route;
         });
