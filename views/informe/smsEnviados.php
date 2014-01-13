@@ -3,7 +3,8 @@
     <div class="row">
         <div class="jumbotron">
             <h1>
-                Encuestas
+                Informes
+                <small>SMS Enviados</small>
                 <span class="label label-info pull-right"><?= $data['num'] ?></span>
             </h1>
         </div>
@@ -11,11 +12,11 @@
     <div class="row">
         <ol class="breadcrumb">
             <li>
-                <i class="glyphicon glyphicon-list"></i>
-                <a href="">Encuestas</a>
+                <i class="glyphicon glyphicon-book"></i>
+                <a href="<?= core::getURI() ?>/informe">Informes</a>
             </li>
             <li class="active">
-                Listado de Encuestas
+                SMS Enviados
             </li>
         </ol>
     </div><!-- /.row -->
@@ -84,7 +85,7 @@
 
                     for(item in encuestas){
 
-                        var detUrl = '', icon = '';
+                        var detUrl = '', icon = '', action = null;
 
                         item = encuestas[item];
                         switch(item.tipo){
@@ -100,6 +101,17 @@
                                 break;
                         }
 
+                        switch(item.tipo){
+                            case "SENT":
+                            case "FAIL":
+                                action = $("<span></span>");
+                                break;
+                            case "SURV":
+                                action = $("<a></a>")
+                                .attr('href', detUrl)
+                        }
+
+                        action.addClass('fa fa-' + icon);
 
 
                         $('#resTable tbody')
@@ -120,12 +132,7 @@
                             .append(
                                 $("<td></td>")
                                 .append(
-                                    $("<a></a>")
-                                    .append(
-                                        $("<span></span>")
-                                        .addClass('fa fa-' + icon)
-                                    )
-                                    .attr('href', detUrl)
+                                    $(action)
                                 )
                             )
                         );

@@ -11,7 +11,7 @@
         <ol class="breadcrumb">
             <li class="active">
                 <i class="glyphicon glyphicon-book"></i>
-                <a href="">Informes</a>
+                Informes
             </li>
         </ol>
     </div><!-- /.row -->

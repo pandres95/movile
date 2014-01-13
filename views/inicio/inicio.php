@@ -12,22 +12,23 @@
     </div><!-- /.row -->
     
     <div class="row">
-        <div class="col-lg-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <i class="fa fa-comments fa-5x"></i>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <p class="announcement-heading"><?php echo $data['sms']['enviados'] ?></p>
-                            <p class="announcement-text">SMS enviados</p>
+        <a href="<?= core::getURI() ?>/informe/sms_enviados">
+            <div class="col-lg-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <i class="fa fa-comments fa-5x"></i>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <p class="announcement-heading"><?php echo $data['sms']['enviados'] ?></p>
+                                <p class="announcement-text">SMS enviados</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
-        </div>
+        </a>
         <div class="col-lg-3">
             <div class="panel panel-warning">
                 <div class="panel-heading">
@@ -49,7 +50,7 @@
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-xs-6">
-                            <i class="fa fa-tasks fa-5x"></i>
+                            <i class="fa fa-times fa-5x"></i>
                         </div>
                         <div class="col-xs-6 text-right">
                             <p class="announcement-heading"><?php echo $data['sms']['fallidos'] ?></p>
@@ -66,7 +67,7 @@
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-xs-6">
-                                <i class="fa fa-book fa-5x"></i>
+                                <i class="fa fa-list-alt fa-5x"></i>
                             </div>
                             <div class="col-xs-6 text-right">
                                 <p class="announcement-heading"><?php echo $data['encuestas'] ?></p>
@@ -110,12 +111,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-8">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <i class="fa fa-clock-o"></i>
-                        Actividades Recientes
+                        <i class="fa fa-list-alt"></i>
+                        Últimas encuestas agregadas
                     </h3>
                 </div>
                 <div class="panel-body">

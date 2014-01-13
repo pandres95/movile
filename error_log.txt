@@ -22,3 +22,13 @@
 [13-Jan-2014 06:55:17 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
 [13-Jan-2014 06:55:17 UTC] PHP   3. informe->p_smsEnviados() C:\wamp\www\movile\core\utils.php:28
 [13-Jan-2014 06:55:17 UTC] PHP   4. smsModel->smsEnviados() C:\wamp\www\movile\controllers\controller.informe.php:61
+[13-Jan-2014 18:48:58 UTC] PHP Warning:  file(controllers/controller.informes.php): failed to open stream: No such file or directory in C:\wamp\www\movile\core\utils.php on line 21
+[13-Jan-2014 18:48:58 UTC] PHP Stack trace:
+[13-Jan-2014 18:48:58 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 18:48:58 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 18:48:58 UTC] PHP   3. file() C:\wamp\www\movile\core\utils.php:21
+[13-Jan-2014 18:49:01 UTC] PHP Warning:  file(controllers/controller.informes.php): failed to open stream: No such file or directory in C:\wamp\www\movile\core\utils.php on line 21
+[13-Jan-2014 18:49:01 UTC] PHP Stack trace:
+[13-Jan-2014 18:49:01 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 18:49:01 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 18:49:01 UTC] PHP   3. file() C:\wamp\www\movile\core\utils.php:21
