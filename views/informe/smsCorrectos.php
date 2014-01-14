@@ -4,7 +4,7 @@
         <div class="jumbotron">
             <h1>
                 Informes
-                <small>SMS Enviados</small>
+                <small>SMS Correctos</small>
                 <span class="label label-info pull-right"><?= $data['num'] ?></span>
             </h1>
         </div>
@@ -16,7 +16,7 @@
                 <a href="<?= core::getURI() ?>/informe">Informes</a>
             </li>
             <li class="active">
-                SMS Enviados
+                SMS Correctos
             </li>
         </ol>
     </div><!-- /.row -->
@@ -71,7 +71,7 @@
                 filter = "&filtro=celular&valor=" + filterval;
             }
 
-            var $url = "<?= core::getURI() ?>/informe/p_smsEnviados/" + page + filter;
+            var $url = "<?= core::getURI() ?>/informe/p_smsCorrectos/" + page + filter;
 
             $.ajax({
                 url: $url,
@@ -91,9 +91,6 @@
                         switch(item.tipo){
                             case "SENT":
                                 icon = 'envelope'
-                                break;
-                            case "FAIL":
-                                icon = 'times'
                                 break;
                             case "SURV":
                                 detUrl = "<?= core::getURI() ?>/encuesta/detalle/" + item.id;

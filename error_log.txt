@@ -32,3 +32,33 @@
 [13-Jan-2014 18:49:01 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
 [13-Jan-2014 18:49:01 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
 [13-Jan-2014 18:49:01 UTC] PHP   3. file() C:\wamp\www\movile\core\utils.php:21
+[13-Jan-2014 22:06:22 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl' : failed to load external entity "http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl"
+ in C:\wamp\www\movile\core\wsdlpro.class.php on line 16
+[13-Jan-2014 22:06:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in C:\wamp\www\movile\core\orm.class.php on line 29
+[13-Jan-2014 22:06:23 UTC] PHP Stack trace:
+[13-Jan-2014 22:06:23 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 22:06:23 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 22:06:23 UTC] PHP   3. enviosms->enviarsms() C:\wamp\www\movile\core\utils.php:30
+[13-Jan-2014 22:06:23 UTC] PHP   4. smsModel->fallaSMS() C:\wamp\www\movile\controllers\controller.enviosms.php:107
+[13-Jan-2014 22:06:23 UTC] PHP   5. orm::query() C:\wamp\www\movile\models\model.sms.php:19
+[13-Jan-2014 22:06:23 UTC] PHP   6. mysqli_fetch_array() C:\wamp\www\movile\core\orm.class.php:29
+[13-Jan-2014 22:06:24 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl' : failed to load external entity "http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl"
+ in C:\wamp\www\movile\core\wsdlpro.class.php on line 16
+[13-Jan-2014 22:06:24 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in C:\wamp\www\movile\core\orm.class.php on line 29
+[13-Jan-2014 22:06:24 UTC] PHP Stack trace:
+[13-Jan-2014 22:06:24 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 22:06:24 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 22:06:24 UTC] PHP   3. enviosms->enviarsms() C:\wamp\www\movile\core\utils.php:30
+[13-Jan-2014 22:06:24 UTC] PHP   4. smsModel->fallaSMS() C:\wamp\www\movile\controllers\controller.enviosms.php:107
+[13-Jan-2014 22:06:24 UTC] PHP   5. orm::query() C:\wamp\www\movile\models\model.sms.php:19
+[13-Jan-2014 22:06:24 UTC] PHP   6. mysqli_fetch_array() C:\wamp\www\movile\core\orm.class.php:29
+[13-Jan-2014 22:06:25 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl' : failed to load external entity "http://hackaton.inalambria.com/ServiceSendMessage.svc?wsdl"
+ in C:\wamp\www\movile\core\wsdlpro.class.php on line 16
+[13-Jan-2014 22:06:25 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in C:\wamp\www\movile\core\orm.class.php on line 29
+[13-Jan-2014 22:06:25 UTC] PHP Stack trace:
+[13-Jan-2014 22:06:25 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[13-Jan-2014 22:06:25 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[13-Jan-2014 22:06:25 UTC] PHP   3. enviosms->enviarsms() C:\wamp\www\movile\core\utils.php:30
+[13-Jan-2014 22:06:25 UTC] PHP   4. smsModel->fallaSMS() C:\wamp\www\movile\controllers\controller.enviosms.php:107
+[13-Jan-2014 22:06:25 UTC] PHP   5. orm::query() C:\wamp\www\movile\models\model.sms.php:19
+[13-Jan-2014 22:06:25 UTC] PHP   6. mysqli_fetch_array() C:\wamp\www\movile\core\orm.class.php:29

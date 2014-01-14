@@ -1,5 +1,5 @@
 <div id="page-wrapper">
-
+    
     <div class="row">
         <div class="jumbotron">
             <h1>
@@ -15,7 +15,7 @@
             </li>
         </ol>
     </div><!-- /.row -->
-
+    
     <div class="row">
         <a href="<?= core::getURI() ?>/informe/sms_enviados">
             <div class="col-lg-4">
@@ -34,38 +34,42 @@
                 </div>
             </div>
         </a>
-        <div class="col-lg-4">
-            <div class="panel panel-warning">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <i class="fa fa-check fa-5x"></i>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <p class="announcement-heading"><?php echo $data['sms']['correctos'] ?></p>
-                            <p class="announcement-text">SMS aceptado</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="panel panel-danger">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <i class="fa fa-tasks fa-5x"></i>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <p class="announcement-heading"><?php echo $data['sms']['fallidos'] ?></p>
-                            <p class="announcement-text">Errores</p>
+        <a href="<?= core::getURI() ?>/informe/sms_correctos">
+            <div class="col-lg-4">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <i class="fa fa-check fa-5x"></i>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <p class="announcement-heading"><?php echo $data['sms']['correctos'] ?></p>
+                                <p class="announcement-text">SMS aceptado</p>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-
             </div>
-        </div>
+        </a>
+        <a href="<?= core::getURI() ?>/informe/sms_fallidos">
+            <div class="col-lg-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <i class="fa fa-tasks fa-5x"></i>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <p class="announcement-heading"><?php echo $data['sms']['fallidos'] ?></p>
+                                <p class="announcement-text">Errores</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
     </div><!-- /.row -->
-
+    
 </div><!-- /#page-wrapper -->
