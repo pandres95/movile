@@ -20,6 +20,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- Bootstrap core JavaScript -->
         <script src="/movile/xhtml/js/vendor/bootstrap.js"></script>
+        <script src="/movile/xhtml/js/steps/jquery.steps.js" ></script>
         <script src="/movile/xhtml/js/paginator/bootstrap-paginator.js" ></script>
         
         <script>

@@ -392,3 +392,138 @@
 [19-Jan-2014 03:44:56 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
 [19-Jan-2014 03:44:56 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
 [19-Jan-2014 03:44:56 UTC] PHP   3. inicio->inicio() C:\wamp\www\movile\core\utils.php:24
+[24-Jan-2014 06:33:48 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:33:48 UTC] PHP Stack trace:
+[24-Jan-2014 06:33:48 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:33:48 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:33:48 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:33:48 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:33:48 UTC] PHP Stack trace:
+[24-Jan-2014 06:33:48 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:33:48 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:33:48 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:33:48 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:33:48 UTC] PHP Stack trace:
+[24-Jan-2014 06:33:48 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:33:48 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:33:48 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:33:52 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:33:52 UTC] PHP Stack trace:
+[24-Jan-2014 06:33:52 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:33:52 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:33:52 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:33:52 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:33:52 UTC] PHP Stack trace:
+[24-Jan-2014 06:33:52 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:33:52 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:33:52 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:33:52 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:33:52 UTC] PHP Stack trace:
+[24-Jan-2014 06:33:52 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:33:52 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:33:52 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:34:13 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:34:13 UTC] PHP Stack trace:
+[24-Jan-2014 06:34:13 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:34:13 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:34:13 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:34:13 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:34:13 UTC] PHP Stack trace:
+[24-Jan-2014 06:34:13 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:34:13 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:34:13 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:34:13 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:34:13 UTC] PHP Stack trace:
+[24-Jan-2014 06:34:13 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:34:13 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:34:13 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:34:23 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:34:23 UTC] PHP Stack trace:
+[24-Jan-2014 06:34:23 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:34:23 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:34:23 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:34:23 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:34:23 UTC] PHP Stack trace:
+[24-Jan-2014 06:34:23 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:34:23 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:34:23 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:34:23 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:34:23 UTC] PHP Stack trace:
+[24-Jan-2014 06:34:23 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:34:23 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:34:23 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:34:26 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.inicio.php on line 6
+[24-Jan-2014 06:34:26 UTC] PHP Stack trace:
+[24-Jan-2014 06:34:26 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:34:26 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:34:26 UTC] PHP   3. inicio->inicio() C:\wamp\www\movile\core\utils.php:24
+[24-Jan-2014 06:44:15 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:44:15 UTC] PHP Stack trace:
+[24-Jan-2014 06:44:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:44:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:44:15 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:44:15 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:44:15 UTC] PHP Stack trace:
+[24-Jan-2014 06:44:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:44:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:44:15 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:44:15 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:44:15 UTC] PHP Stack trace:
+[24-Jan-2014 06:44:15 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:44:15 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:44:15 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:44:33 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:44:33 UTC] PHP Stack trace:
+[24-Jan-2014 06:44:33 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:44:33 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:44:33 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:44:33 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:44:33 UTC] PHP Stack trace:
+[24-Jan-2014 06:44:33 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:44:33 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:44:33 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:44:33 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:44:33 UTC] PHP Stack trace:
+[24-Jan-2014 06:44:33 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:44:33 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:44:33 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:45:27 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:45:27 UTC] PHP Stack trace:
+[24-Jan-2014 06:45:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:45:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:45:27 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:45:27 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:45:27 UTC] PHP Stack trace:
+[24-Jan-2014 06:45:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:45:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:45:27 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:45:27 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:45:27 UTC] PHP Stack trace:
+[24-Jan-2014 06:45:27 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:45:27 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:45:27 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:46:02 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.app.php on line 18
+[24-Jan-2014 06:46:02 UTC] PHP Stack trace:
+[24-Jan-2014 06:46:02 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:46:02 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:46:02 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:46:02 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 20
+[24-Jan-2014 06:46:02 UTC] PHP Stack trace:
+[24-Jan-2014 06:46:02 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:46:02 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:46:02 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:46:02 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\movile\controllers\controller.app.php on line 21
+[24-Jan-2014 06:46:02 UTC] PHP Stack trace:
+[24-Jan-2014 06:46:02 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:46:02 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:46:02 UTC] PHP   3. app->header_items() C:\wamp\www\movile\core\utils.php:30
+[24-Jan-2014 06:46:04 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.inicio.php on line 6
+[24-Jan-2014 06:46:04 UTC] PHP Stack trace:
+[24-Jan-2014 06:46:04 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:46:04 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:46:04 UTC] PHP   3. inicio->inicio() C:\wamp\www\movile\core\utils.php:24
+[24-Jan-2014 06:46:18 UTC] PHP Notice:  Undefined index: u_session in C:\wamp\www\movile\controllers\controller.inicio.php on line 6
+[24-Jan-2014 06:46:18 UTC] PHP Stack trace:
+[24-Jan-2014 06:46:18 UTC] PHP   1. {main}() C:\wamp\www\movile\index.php:0
+[24-Jan-2014 06:46:18 UTC] PHP   2. routing() C:\wamp\www\movile\index.php:36
+[24-Jan-2014 06:46:18 UTC] PHP   3. inicio->inicio() C:\wamp\www\movile\core\utils.php:24
