@@ -4,7 +4,7 @@
         <div class="jumbotron">
             <h1>
                 Informes
-                <small>SMS Enviados</small>
+                <small>SMS Fallidos</small>
                 <span class="label label-info pull-right"><?= $data['num'] ?></span>
             </h1>
         </div>
@@ -12,11 +12,11 @@
     <div class="row">
         <ol class="breadcrumb">
             <li>
-                <i class="glyphicon glyphicon-comment"></i>
+                <i class="glyphicon glyphicon-tasks"></i>
                 <a href="<?= core::getURI() ?>/informe">Informes</a>
             </li>
             <li class="active">
-                SMS Enviados
+                SMS Fallidos
             </li>
         </ol>
     </div><!-- /.row -->
@@ -71,7 +71,7 @@
                 filter = "&filtro=celular&valor=" + filterval;
             }
 
-            var $url = "<?= core::getURI() ?>/informe/p_smsEnviados/" + page + filter;
+            var $url = "<?= core::getURI() ?>/informe/p_smsFallidos/" + page + filter;
 
             $.ajax({
                 url: $url,
@@ -92,12 +92,12 @@
                             case "SENT":
                                 icon = 'envelope'
                                 break;
-                            case "FAIL":
-                                icon = 'times'
-                                break;
                             case "SURV":
                                 detUrl = "<?= core::getURI() ?>/encuesta/detalle/" + item.id;
                                 icon = 'bar-chart-o'
+                                break;
+                            case "FAIL":
+                                icon = 'times';
                                 break;
                         }
 

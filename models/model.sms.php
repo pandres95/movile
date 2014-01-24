@@ -123,4 +123,47 @@ class smsModel extends Model{
 
     }
 
+    public function smsFallidos($pagenum){
+
+
+        $filtro = '';
+
+        if(isset($_GET['filtro'])){
+            $filtro = "WHERE " . $_GET['filtro'] . " LIKE '%" . $_GET['valor'] . "%'";
+        }
+
+        if (!(isset($pagenum))){
+            $pagenum = 1;
+        }
+
+        $tmp = Controller::query("SELECT COUNT(id) as cuenta FROM sms_fallidos $filtro;");
+        $rows = $tmp[0]['cuenta'];
+        $page_rows = isset($_POST['page_rows']) ? $_POST['page_rows'] : 4;
+        $last = ceil($rows / $page_rows);
+
+        if ($pagenum < 1) {
+            $pagenum = 1;
+        } elseif ($pagenum > $last) {
+            $pagenum = $last;
+        }
+
+        $limit = 'LIMIT ' .($page_rows * ((int)$pagenum - 1)) . ', ' . $page_rows;
+
+
+        $sql = "SELECT id, celular, '' AS mensaje, fecha, 'FAIL' as tipo FROM sms_fallidos $filtro ORDER BY fecha, celular $limit;";
+
+        $data = array("num_paginas" => $last,
+                      "resultados" => Controller::query($sql)
+                     );
+
+        if(PHP_VERSION_ID < 50400){
+            $res = pretty_json(json_encode($data), "\n", "    ");
+        } else {
+            $res = json_encode($data, JSON_PRETTY_PRINT);
+        }
+
+        return $res;
+
+    }
+    
 }

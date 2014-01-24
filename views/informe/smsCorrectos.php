@@ -12,7 +12,7 @@
     <div class="row">
         <ol class="breadcrumb">
             <li>
-                <i class="glyphicon glyphicon-book"></i>
+                <i class="glyphicon glyphicon-ok"></i>
                 <a href="<?= core::getURI() ?>/informe">Informes</a>
             </li>
             <li class="active">

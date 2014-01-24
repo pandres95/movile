@@ -3,10 +3,12 @@
 class app extends Controller {
     
     public function app() {
-        header('Content-Type: application/json; charset=UTF-8');
         if($_SERVER['REQUEST_METHOD'] == 'GET'){
-            http_response_code(403);
+            http_response_code(401);
+            include '/xhtml/err_docs/401.html';
+            exit;
         }
+        header('Content-Type: application/json; charset=UTF-8');
     }
     
     public function header_items()  {

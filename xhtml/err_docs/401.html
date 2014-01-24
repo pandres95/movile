@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>401 - No autorizado</title>
+        <style type="text/css">
+            
+            @font-face {
+                font-family: 'Freshman';
+                src: url('/movile/xhtml/fonts/freshman.ttf');
+            }
+            
+            @font-face {
+                font-family: 'GeoSans';
+                src: url('/movile/xhtml/fonts/GeoSansLight.ttf');
+            }
+            
+            img {
+                padding-top: 1vh;
+                display: inline-block;
+            }
+            
+            
+            @media all and (orientation: landscape){
+                img {
+                    width: 28vw;
+                }
+            }
+            
+            @media all and (orientation: landscape) and (max-width: 900px){
+                img {
+                    width: 40vw;
+                }
+            }
+            
+            
+            @media all and (orientation: portrait){
+                img {
+                    width: 55vw;
+                }
+            }
+            
+            @media all and (orientation: portrait) and (max-width: 550px){
+                img {
+                    width: 75vw;
+                }
+            }
+            
+            
+            html {
+                text-align: center;
+                background-color: rgb(255, 217, 15);
+                color: white;
+                font-family: 'GeoSans';
+            }
+            
+            h1 {
+                line-height: 0px;
+                font-size: 20vh;
+                font-family: 'Freshman';
+            }
+            
+            a, a:hover, a:link {
+                text-decoration: none;
+                color: gray;
+            }
+            
+            p {
+                font-size: 4vh;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="/movile/xhtml/img/960px-bart.png" alt="bart">
+        <h1>401</h1>
+        <p>Parece que no estás autorizado a entrar a este lugar.<br/>Intenta regresar por <a href="/movile">aquí</a>.</p>
+    </body>
+</html>

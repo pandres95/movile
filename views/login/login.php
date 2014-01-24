@@ -14,7 +14,7 @@
         background-color: #eee;
       }
       body {
-        padding-top: 40px; 
+        padding-top: 40px;
       }
       .container {
         width: 300px;
@@ -29,7 +29,7 @@
       <div class="row">
         <div class="login-form">
           <h2>Movile</h2>
-          <form action="/movile/login/auth" method="post">
+          <form action="<?= core::getURI() ?>/login/auth" method="post">
             <fieldset>
               <div class="clearfix">
                 <input type="text" placeholder="Username" name="user" class="form-control">

@@ -61,7 +61,9 @@ class informe extends Controller {
             header('Content-Type: application/json; charset=UTF-8');
             echo Controller::getModel('sms')->smsEnviados($pagenum);
         } else {
-            http_response_code(403);
+            http_response_code(401);
+            include '/xhtml/err_docs/401.html';
+            exit;
         }
         
     }
@@ -102,7 +104,9 @@ class informe extends Controller {
             header('Content-Type: application/json; charset=UTF-8');
             echo Controller::getModel('sms')->smsCorrectos($pagenum);
         } else {
-            http_response_code(403);
+            http_response_code(401);
+            include '/xhtml/err_docs/401.html';
+            exit;
         }
         
     }
@@ -136,6 +140,49 @@ class informe extends Controller {
         });
         
     }
+    
+    public function p_smsFallidos($pagenum = ''){
+        
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            header('Content-Type: application/json; charset=UTF-8');
+            echo Controller::getModel('sms')->smsFallidos($pagenum);
+        } else {
+            http_response_code(403);
+            exit;
+        }
+        
+    }
+    
+    public function sms_fallidos ($data = ''){
+        
+        $Slim = Controller::$slimx;
+        
+        $sms_enviados = json_decode(Controller::getModel('info')->smsFallidos());
+        if(!isset($sms_enviados->error)){
+            $sms_enviados = $sms_enviados[0]->cuenta;
+        }else {
+            $sms_enviados = 0;
+        }
+        
+        $Slim::getView('app/head', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+        
+        $data = array("num" => $sms_enviados);
+        
+        $Slim::getView('informe/smsFallidos', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+        
+        $Slim::getView('app/foot', $data, function($route,$data){
+            $data;
+            include $route;
+        });
+        
+    }
+    
     
 }
 
