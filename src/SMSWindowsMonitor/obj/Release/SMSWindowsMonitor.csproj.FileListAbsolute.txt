@@ -3,3 +3,8 @@ C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSWindowsMonitor\bin\Release
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSWindowsMonitor\obj\Release\ResolveAssemblyReference.cache
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSWindowsMonitor\obj\Release\SMSWindowsMonitor.exe
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSWindowsMonitor\obj\Release\SMSWindowsMonitor.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSWindowsMonitor\obj\Release\SMSWindowsMonitor.exe
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSWindowsMonitor\obj\Release\SMSWindowsMonitor.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSWindowsMonitor\bin\Release\SMSWindowsMonitor.exe
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSWindowsMonitor\bin\Release\SMSWindowsMonitor.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSWindowsMonitor\obj\Release\SMSWindowsMonitor.csprojResolveAssemblyReference.cache

@@ -4,6 +4,96 @@
         <name>ServiceHelper</name>
     </assembly>
     <members>
+        <member name="T:ServiceHelper.DataManager.QuestionsManager">
+            <summary>
+            Maneja el procesamiento de las respuestas enviadas por los usuarios, así como el envío de las siguientes preguntas.
+            </summary>
+        </member>
+        <member name="F:ServiceHelper.DataManager.QuestionsManager.dbConn">
+            <summary>
+            Conexión a la base de datos
+            </summary>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor de la conexión de base de datos
+            </summary>
+            <param name="host">Servidor host para la conexión.</param>
+            <param name="uName">Nombre de usuario para la conexión</param>
+            <param name="pass">Constraseña de conexión</param>
+            <param name="db">Base de datos a conectarse.</param>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.HasActiveQuestion(System.String)">
+            <summary>
+            Busca si el usuario <paramref name="celular"/> tiene preguntas activas por responder.
+            </summary>
+            <param name="celular">Número de celular del usuario a buscar.</param>
+            <returns>Un valor <see cref="T:System.Boolean"/> indicando si el usuario tiene preguntas activas para responder o no.</returns>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.AnswerQuestion(System.String,System.Int32)">
+            <summary>
+            Responde la pregunta actual del usuario <paramref name="celular"/> con el <paramref name="numeral"/> indicado.
+            </summary>
+            <param name="celular">El número celular del usuario a responder la pregunta.</param>
+            <param name="numeral">El numeral indicado para la respuesta</param>
+            <returns>Un valor <see cref="T:System.Boolean"/> indicando si la respuesta a la pregunta se hizo exitosamente o no.</returns>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.HasNextQuestion(System.String)">
+            <summary>
+            Indica si el usuario tiene siguientes preguntas por responder.
+            </summary>
+            <param name="celular">El número de celular del usuario a buscar.</param>
+            <returns>Un valor <see cref="T:System.Boolean"/> indicando si el usuario tiene o no una pregunta siguiente para responder.</returns>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.AskNextQuestion(System.String)">
+            <summary>
+            Ingresa la siguiente pregunta para el usuario <paramref name="celular"/> en la base de datos.
+            </summary>
+            <param name="celular">El usuario a preguntarsele.</param>
+            <returns>Un <see cref="T:System.Boolean"/> indicando si la pregunta fue correctamente asignada o no.</returns>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.NextQuestion(System.String)">
+            <summary>
+            Busca la siguiente pregunta para el usuario <paramref name="celular"/>.
+            </summary>
+            <param name="celular">El número celular del usuario a buscar.</param>
+            <returns>El número de la siguiente pregunta o -1 si no existe siguiente pregunta</returns>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.Question(System.Int32)">
+            <summary>
+            Busca el texto de la pregunta indicada.
+            </summary>
+            <param name="questionNumber">El número de la pregunta a buscar.</param>
+            <returns>Un <see cref="T:System.String"/> con el texto de la pregunta </returns>
+        </member>
+        <member name="M:ServiceHelper.DataManager.QuestionsManager.InvalidatePreviousQuestion(System.String)">
+            <summary>
+            Invalida las preguntas anteriores a la pregunta actual del usuario <paramref name="celular"/> que quedaron abiertas.
+            </summary>
+            <param name="celular">El número celular del usuario al cual se le va a invalidar las preguntas anteriores.</param>
+            <returns>El número de preguntas que fueron invalidadas tras el proceso.</returns>
+        </member>
+        <member name="F:ServiceHelper.DataManager.SMSErrorManager.dbConn">
+            <summary>
+            Conexión a la base de datos
+            </summary>
+        </member>
+        <member name="M:ServiceHelper.DataManager.SMSErrorManager.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor de la conexión de base de datos
+            </summary>
+            <param name="host">Servidor host para la conexión.</param>
+            <param name="uName">Nombre de usuario para la conexión</param>
+            <param name="pass">Constraseña de conexión</param>
+            <param name="db">Base de datos a conectarse.</param>
+        </member>
+        <member name="M:ServiceHelper.DataManager.SMSErrorManager.LogSMSError(System.String)">
+            <summary>
+            Busca si el usuario <paramref name="celular"/> tiene preguntas activas por responder.
+            </summary>
+            <param name="celular">Número de celular del usuario a buscar.</param>
+            <returns>Un valor <see cref="T:System.Boolean"/> indicando si el usuario tiene preguntas activas para responder o no.</returns>
+        </member>
         <member name="T:ServiceHelper.SMSManager.IServiceSendMessage">
             <summary>
             Interfaz de envío de mensajes
@@ -85,75 +175,6 @@
             <param name="lastReviewedId">Id a partir del cual se leera</param>
             <returns>Todos los mensajes a partir del <paramref name="lastReviewedId"/> especificado.</returns>
         </member>
-        <member name="T:ServiceHelper.DataManager.QuestionsManager">
-            <summary>
-            Maneja el procesamiento de las respuestas enviadas por los usuarios, así como el envío de las siguientes preguntas.
-            </summary>
-        </member>
-        <member name="F:ServiceHelper.DataManager.QuestionsManager.dbConn">
-            <summary>
-            Conexión a la base de datos
-            </summary>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.#ctor(System.String,System.String,System.String,System.String)">
-            <summary>
-            Constructor de la conexión de base de datos
-            </summary>
-            <param name="host">Servidor host para la conexión.</param>
-            <param name="uName">Nombre de usuario para la conexión</param>
-            <param name="pass">Constraseña de conexión</param>
-            <param name="db">Base de datos a conectarse.</param>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.HasActiveQuestion(System.String)">
-            <summary>
-            Busca si el usuario <paramref name="celular"/> tiene preguntas activas por responder.
-            </summary>
-            <param name="celular">Número de celular del usuario a buscar.</param>
-            <returns>Un valor <see cref="T:System.Boolean"/> indicando si el usuario tiene preguntas activas para responder o no.</returns>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.AnswerQuestion(System.String,System.Int32)">
-            <summary>
-            Responde la pregunta actual del usuario <paramref name="celular"/> con el <paramref name="numeral"/> indicado.
-            </summary>
-            <param name="celular">El número celular del usuario a responder la pregunta.</param>
-            <param name="numeral">El numeral indicado para la respuesta</param>
-            <returns>Un valor <see cref="T:System.Boolean"/> indicando si la respuesta a la pregunta se hizo exitosamente o no.</returns>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.HasNextQuestion(System.String)">
-            <summary>
-            Indica si el usuario tiene siguientes preguntas por responder.
-            </summary>
-            <param name="celular">El número de celular del usuario a buscar.</param>
-            <returns>Un valor <see cref="T:System.Boolean"/> indicando si el usuario tiene o no una pregunta siguiente para responder.</returns>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.AskNextQuestion(System.String)">
-            <summary>
-            Ingresa la siguiente pregunta para el usuario <paramref name="celular"/> en la base de datos.
-            </summary>
-            <param name="celular">El usuario a preguntarsele.</param>
-            <returns>Un <see cref="T:System.Boolean"/> indicando si la pregunta fue correctamente asignada o no.</returns>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.NextQuestion(System.String)">
-            <summary>
-            Busca la siguiente pregunta para el usuario <paramref name="celular"/>.
-            </summary>
-            <param name="celular">El número celular del usuario a buscar.</param>
-            <returns>El número de la siguiente pregunta o -1 si no existe siguiente pregunta</returns>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.Question(System.Int32)">
-            <summary>
-            Busca el texto de la pregunta indicada.
-            </summary>
-            <param name="questionNumber">El número de la pregunta a buscar.</param>
-            <returns>Un <see cref="T:System.String"/> con el texto de la pregunta </returns>
-        </member>
-        <member name="M:ServiceHelper.DataManager.QuestionsManager.InvalidatePreviousQuestion(System.String)">
-            <summary>
-            Invalida las preguntas anteriores a la pregunta actual del usuario <paramref name="celular"/> que quedaron abiertas.
-            </summary>
-            <param name="celular">El número celular del usuario al cual se le va a invalidar las preguntas anteriores.</param>
-            <returns>El número de preguntas que fueron invalidadas tras el proceso.</returns>
-        </member>
         <member name="T:ServiceHelper.SMSManager.SMSAnswer">
             <summary>
             Descripción de un mensaje de texto de respuesta
@@ -187,27 +208,6 @@
             <summary>
             Fecha de envío del mensaje
             </summary>
-        </member>
-        <member name="F:ServiceHelper.DataManager.SMSErrorManager.dbConn">
-            <summary>
-            Conexión a la base de datos
-            </summary>
-        </member>
-        <member name="M:ServiceHelper.DataManager.SMSErrorManager.#ctor(System.String,System.String,System.String,System.String)">
-            <summary>
-            Constructor de la conexión de base de datos
-            </summary>
-            <param name="host">Servidor host para la conexión.</param>
-            <param name="uName">Nombre de usuario para la conexión</param>
-            <param name="pass">Constraseña de conexión</param>
-            <param name="db">Base de datos a conectarse.</param>
-        </member>
-        <member name="M:ServiceHelper.DataManager.SMSErrorManager.LogSMSError(System.String)">
-            <summary>
-            Busca si el usuario <paramref name="celular"/> tiene preguntas activas por responder.
-            </summary>
-            <param name="celular">Número de celular del usuario a buscar.</param>
-            <returns>Un valor <see cref="T:System.Boolean"/> indicando si el usuario tiene preguntas activas para responder o no.</returns>
         </member>
     </members>
 </doc>

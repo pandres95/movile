@@ -26,23 +26,6 @@
             Punto principal del Servicio de Windows encargado de recibir y procesar los mensajes de texto de los usuarios.
             </summary>
         </member>
-        <member name="F:SMSReceiverService.SMSReceiverService.components">
-            <summary> 
-            Variable del diseñador requerida.
-            </summary>
-        </member>
-        <member name="M:SMSReceiverService.SMSReceiverService.Dispose(System.Boolean)">
-            <summary>
-            Limpiar los recursos que se estén utilizando.
-            </summary>
-            <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario, false.</param>
-        </member>
-        <member name="M:SMSReceiverService.SMSReceiverService.InitializeComponent">
-            <summary> 
-            Método necesario para admitir el Diseñador. No se puede modificar 
-            el contenido del método con el editor de código.
-            </summary>
-        </member>
         <member name="M:SMSReceiverService.SMSReceiverService.#ctor">
             <summary>
             Constructor predeterminado
@@ -81,6 +64,23 @@
         <member name="M:SMSReceiverService.SMSReceiverService.OnStop">
             <summary>
             Evento que ocurre al detener el servicio
+            </summary>
+        </member>
+        <member name="F:SMSReceiverService.SMSReceiverService.components">
+            <summary> 
+            Variable del diseñador requerida.
+            </summary>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén utilizando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario, false.</param>
+        </member>
+        <member name="M:SMSReceiverService.SMSReceiverService.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar 
+            el contenido del método con el editor de código.
             </summary>
         </member>
         <member name="M:SMSReceiverService.Program.Main">

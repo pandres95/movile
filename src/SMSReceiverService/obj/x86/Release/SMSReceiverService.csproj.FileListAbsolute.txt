@@ -11,3 +11,16 @@ C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Re
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.exe
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe.config
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\bin\Release\SMSReceiverService.XML
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\bin\Release\SMSReceiverService.exe
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\bin\Release\SMSReceiverService.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\bin\Release\ServiceHelper.dll
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\bin\Release\ServiceHelper.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\bin\Release\ServiceHelper.xml
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.csprojResolveAssemblyReference.cache
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.ProjectInstaller.resources
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.SMSReceiverService.resources
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.csproj.GenerateResource.Cache
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.exe
+D:\pandres95\Documents\movile\sms_windows_service\src\SMSReceiverService\obj\x86\Release\SMSReceiverService.pdb

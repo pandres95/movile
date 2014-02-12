@@ -3,3 +3,10 @@ C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\bin\Release\Ser
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\obj\Release\ResolveAssemblyReference.cache
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\obj\Release\ServiceHelper.dll
 C:\Users\GOLDEN\Documents\sms_receiver_service\src\ServiceHelper\obj\Release\ServiceHelper.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\ServiceHelper\obj\Release\ServiceHelper.csprojResolveAssemblyReference.cache
+D:\pandres95\Documents\movile\sms_windows_service\src\ServiceHelper\obj\Release\ServiceHelper.dll
+D:\pandres95\Documents\movile\sms_windows_service\src\ServiceHelper\obj\Release\ServiceHelper.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\ServiceHelper\bin\Release\ServiceHelper.xml
+D:\pandres95\Documents\movile\sms_windows_service\src\ServiceHelper\bin\Release\ServiceHelper.dll
+D:\pandres95\Documents\movile\sms_windows_service\src\ServiceHelper\bin\Release\ServiceHelper.pdb
+D:\pandres95\Documents\movile\sms_windows_service\src\ServiceHelper\bin\Release\Newtonsoft.Json.dll
