@@ -27,7 +27,7 @@ autoLoad($libraries);
 $config = array('errors' => true, 'uri'=>'http://localhost/movile');
 $app['app']::settings($config);
 
-$app['app']::SQLConnect(array('host'=>'localhost','user'=>'shorty_your658','pass'=>'g2sdxPS2i7','db'=>'shorty_movile'));
+$app['app']::SQLConnect(array('host'=>'localhost','user'=>'','pass'=>'','db'=>''));
 
 // Send PHP vID to GLOBALS
 PHP_VERSION_ID();
